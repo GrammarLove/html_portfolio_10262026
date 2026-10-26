@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+    <Head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spanish Verbs</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+body {
+    background-color: tan
+}
+
+p, li {
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3 {
+    color: maroon;
+}
+
+.page_image {
+   width: 100px;
+   height: 100px; 
+}
+
+.grid {
+      display: grid;
+      grid-template-columns: repeat(6, 130px);
+      grid-template-rows: repeat(7, 70px);
+      gap: 4px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+    }
+
+.grid_4 {
+      display: grid;
+      grid-template-columns: repeat(4, 130px);
+      grid-template-rows: repeat(8, 70px);
+      gap: 4px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+    }
+
+ .grid_3 {
+      display: grid;
+      grid-template-columns: repeat(3, 130px);
+      grid-template-rows: repeat(8, 70px);
+      gap: 4px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+    }
+          
+.cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    .header {
+      background-color: peru;
+      font-weight: bold;
+    }
+
+    .row-label {
+      background-color: peru;
+      font-weight: bold;
+    }
+    
+ .row-label {
+      background-color: peru;
+      font-weight: bold;
+    }
+    
+table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px auto;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: white;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+      background-color: tan;
+      color: brown;
+    }
+    th {
+      background-color: tan;
+      color: brown;
+    }
+          
+    </style>   
+    </Head>
+    <body>
+        <h1><img class="page_image" src="./mychatgptimage.png" image of my ChatGPT image bitmoji>  Spanish verbs</h1>
+          <hr />
+          <nav class="navbar navbar-expand-lg style="background-color: tan; bg-body-tertiary>
+        <div class="container-fluid">
+    <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+</svg><img src="./dog.jpg" height="16" alt=""> Navigate the site</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./au_courant.html">Au courant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./GrammarLove.html">GrammarLove</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./journaling.html">Journaling</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./resume.html">Resume</a>
+        </li>
+       <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Spanish Focus Areas
+          </a>
+          <ul class="dropdown-menu" style="background-color: tan;">
+            <li><a class="dropdown-item" href="./Common Sayings.html">Common Sayings</a></li>
+            <li><a class="dropdown-item" href="./Confusing Words.html">Confusing Words</a></li>
+            <li><a class="dropdown-item" href="./Numbers.html">Numbers</a></li>
+            <li><a class="dropdown-item" href="./Pronouns.html">Pronouns</a></li>
+            <li><a class="dropdown-item" href="./Similar Words.html">Similar Words</a></li>
+            <li><a class="dropdown-item" href="./Verbs.html">Verbs</a></li>
+            <li><a class="dropdown-item" href="./Vocabulary.html">Vocabulary</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="./Spanish.html">Spanish culture</a></li>
+          </ul>
+        </li>
+        </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Find</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    <hr />
+        <p>On this page of my website, I will cover Spanish verbs. And there are a lot of them. There are also the tenses, which are difficult to leran too. If I tried to speak Spanish today, I would break a lot of verbs. I'm trying to use strategies for that to be improved upon.</p>
+        
+        <p>So, to that end, the page begins.</p>
+          <hr />
+           <h2 id="top">HTML Code for Spanish Letters</h2>
+                
+          <section id="accent vowels">
+          <h3>Accent Vowels</h3>
+          </section>
+            <ul>
+                <li>á: &aacute; or &#225; cap &#193;</li>
+                <li>é: &eacute; or &#233; cap &#201;</li>
+                <li>í: &iacute; or &#237; cap &#205;</li>
+                <li>ó: &oacute; or &#243; cap &#211;</li>
+                <li>ú: &uacute; or &#250; cap &#218;</li>
+            </ul>
+          <h3>Special Characters</h3>  
+          <ul>
+                <li>ñ: &ntilde; or &#241;</li>
+                <li>Ñ: &Ntilde; or &#209;</li>
+                <li>ü: &uuml; or &#252;</li>
+                <li>Ü: &Uuml; or &#220;</li>
+           </ul>
+
+          <h3>Punctuation</h3>  
+          <ul>
+                <li>¡ (Inverted Exclamation): &iexcl; or &#161;</li>
+                <li>¿ (Inverted Question Mark): &iquest; or &#191;</li>
+           </ul> 
+           <hr /> 
+           <section id="Indicative">
+           <h2>Indicative</h2>
+           </section>
+    <p>The indicative form of a verb is the most common English form of a verb. It is used to make factual statements or to state the current situation.</p>
+    <div class="grid">
+    <!-- Header Row -->
+    <div class="cell header">Person</div>
+    <div class="cell header">Present</div>
+    <div class="cell header">Preterit (Past)</div>
+    <div class="cell header">Imperfect (was 'ing)</div>
+    <div class="cell header">Conditional (would)</div>
+    <div class="cell header">Future (will)</div>
+<!-- Row 1 -->
+    <div class="cell row-label">Yo</div>
+    <div class="cell">o</div>
+    <div class="cell">ar-&eacute;; er/ir-&iacute;
+      </div>
+    <div class="cell">ar-aba; er/ir-&iacute;a</div>
+    <div class="cell">&iacute;a</div>
+    <div class="cell">&eacute;</div>
+
+    <!-- Row 2 -->
+    <div class="cell row-label">T&uacute;</div>
+    <div class="cell">ar-as; er/ir-es</div>
+    <div class="cell">ar-aste; er/ir-iste</div>
+    <div class="cell">ar-abas; er/ir-&iacute;as</div>
+    <div class="cell">r&iacute;as</div>
+    <div class="cell">r&aacute;s</div>
+
+    <!-- Row 3 -->
+    <div class="cell row-label">Vos (Informal you)</div>
+    <div class="cell">ar-&aacute;s; er-&eacute;s; ir-&iacute;s</div>
+    <div class="cell">ar-aste; er/ir-iste</div>
+    <div class="cell">ar-abas; er/ir-iste</div>
+    <div class="cell">r&iacute;as</div>
+    <div class="cell">r&aacute;s</div>
+
+    <!-- Row 4 -->
+    <div class="cell row-label">&#201;l/Ella/Usted</div>
+    <div class="cell">ar-a; er/ir-e</div>
+    <div class="cell">&oacute;</div>
+    <div class="cell">ar-aba; er/ir-&iacute;a</div>
+    <div class="cell">&iacute;a</div>
+    <div class="cell">&aacute;</div>
+
+    <!-- Row 5 -->
+    <div class="cell row-label">Nosotros/as</div>
+    <div class="cell">ar-amos; er-emos; ir-rimos</div>
+    <div class="cell">ar-amos; er-emos; ir-rimos</div>
+    <div class="cell">ar-abamos; er/ir-&iacute;amos</div>
+    <div class="cell">r&iacute;amos</div>
+    <div class="cell">remos</div>
+
+    <!-- Row 6 -->
+    <div class="cell row-label">Vosotros (Plural you)</div>
+    <div class="cell">ar-&aacute;is; er-&eacute;is; ir-&iacute;s</div>
+    <div class="cell">ar-steis; er-isteis; ir-teis</div>
+    <div class="cell">ar-bais; er/ir-&iacute;ais</div>
+    <div class="cell">ar-r&iacute;ais; er/ir-r&iacute;ais</div>
+    <div class="cell">ar-r&eacute;is; er/ir-r&eacute;is</div>
+  
+  <!-- Row 7 -->
+    <div class="cell row-label">Ellos/as/Uds</div>
+    <div class="cell">ar-an; er/ir-ren</div>
+    <div class="cell">ar-ron; er/ir-ieron</div>
+    <div class="cell">ar-aban; er/ir-&iacute;an</div>
+    <div class="cell">r&iacute;an</div>
+    <div class="cell">r&aacute;n</div>
+  </div>
+  <hr />
+  <section id="Subjective">
+  <h2>Subjective (Pronouns)</h2>
+  </section>
+    <p>Used to express a thought that is something other than a fact or current situation. It is used to express a point of view or an emotion.</p>
+  <div>
+    <div class="grid_4">
+    <div class="cell header">Person</div>
+    <div class="cell header">Present</div>
+    <div class="cell header">Imperfect</div>
+    <div class="cell header">Future</div>
+
+    <div class="cell row-label">Yo</div>
+    <div class="cell">ar-e; er/ir-a</div>
+    <div class="cell">ar-ara, ase; er/ir-iera, iese</div>
+    <div class="cell">ar-are; er/ir-iere</div>
+    
+
+    <!-- Row 2 -->
+    <div class="cell row-label">T&uacute;</div>
+    <div class="cell">ar-es; er/ir-as</div>
+    <div class="cell">ras, ses</div>
+    <div class="cell">res</div>
+
+    <!-- Row 3 -->
+    <div class="cell row-label">Vos (Informal you)</div>
+    <div class="cell">ar-es; er/ir-as</div>
+    <div class="cell">ras, ses</div>
+    <div class="cell">res</div>
+   
+
+    <!-- Row 4 -->
+    <div class="cell row-label">&#201;l/Ella/Usted</div>
+    <div class="cell">ar-e, er/ir-a</div>
+    <div class="cell">ara, ase; er/ir-era, ese</div>
+    <div class="cell">ar-are; er/ir-ere</div>
+   
+
+    <!-- Row 5 -->
+    <div class="cell row-label">Nosotros/as</div>
+    <div class="cell">ar-emos; er-amos</div>
+    <div class="cell">ramos, semos</div>
+    <div class="cell">remos</div>
+
+     <!-- Row 6 -->
+    <div class="cell row-label">Vosotros (Plural you)</div>
+    <div class="cell">ar-&eacute;is; er/ir-&aacute;is</div>
+    <div class="cell">rais, seis</div>
+    <div class="cell">reis</div>
+    
+
+    <!-- Row 7 -->
+    <div class="cell row-label">Ellos/as/Utd</div>
+    <div class="cell">ar-en; er/ir-an</div>
+    <div class="cell">ran, sen</div>
+    <div class="cell">ren</div>
+ </div>
+ <hr />
+ <section id="Imperative">
+<h2>Imperative (Command)</h2>
+</section>
+    <p>An imperative verb is a verb that expresses a command, instruction, or request. It is used to tell someone to do something and is often referred to as a "command word" or "bossy verb." In an imperative sentence, the imperative verb is the action word that directs the listener or reader to perform a specific action.</p>
+  <div>
+    <div class="grid_3">
+    <div class="cell header">Person</div>
+    <div class="cell header">Affirmative</div>
+    <div class="cell header">Negative</div>
+
+    <div class="cell row-label">Yo</div>
+    <div class="cell">-</div>
+    <div class="cell">-</div>
+    
+
+    <!-- Row 2 -->
+    <div class="cell row-label">T&uacute;</div>
+    <div class="cell">ar-a; er/ir-e</div>
+    <div class="cell">ar-es; er/ir-as</div>
+   
+
+    <!-- Row 3 -->
+    <div class="cell row-label">Vos (Informal you)</div>
+    <div class="cell">ar-&aacute;; er-&eacute;; ir-&iacute;</div>
+    <div class="cell">ar-es; er/ir-as</div>
+    
+
+    <!-- Row 4 -->
+    <div class="cell row-label">&#201;l/Ella/Usted</div>
+    <div class="cell">ar-e;; er/ir-a</div>
+    <div class="cell">ar-e; er/ir-a</div>
+    
+
+    <!-- Row 5 -->
+    <div class="cell row-label">Nosotros/as</div>
+    <div class="cell">os</div>
+    <div class="cell">os</div>
+
+    <!-- Row 6 -->
+    <div class="cell row-label">Vosotros (Plural you)</div>
+    <div class="cell">ar-ad; er-ed; ir-id</div>
+    <div class="cell">ar-&eacute;is; er/ir-&aacute;is</div>
+
+     <!-- Row 7 -->
+    <div class="cell row-label">Ellos/as/Utd</div>
+    <div class="cell">ar-en; er-an</div>
+    <div class="cell">ar-en; er/ir-an</div>
+ </div>
+<hr />
+<section id="Progressive">
+<h2>Progressive</h2>
+</section>
+    <p>The progressive verb tense, also called the continuous tense, is an English verb tense used to describe continuing actions—actions that are in progress and ongoing. It can be conjugated to be used in the past, present, or future.</p>
+    <div class="grid">
+    <!-- Header Row -->
+    <div class="cell header">Person</div>
+    <div class="cell header">Present</div>
+    <div class="cell header">Preterit</div>
+    <div class="cell header">Imperfect</div>
+    <div class="cell header">Conditional</div>
+    <div class="cell header">Future</div>
+<!-- Row 1 -->
+    <div class="cell row-label">Yo</div>
+    <div class="cell">estoy ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estuve ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estaba ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estar&iacute;a ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estar&eacute; ar-ando; er-iendo; ir-endo</div>
+
+    <!-- Row 2 -->
+    <div class="cell row-label">T&uacute;</div>
+    <div class="cell">est&aacute;s ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estuviste ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estabas ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estar&iacute;as ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estar&aacute;s ar-ando; er-iendo; ir-endo</div>
+
+    <!-- Row 3 -->
+    <div class="cell row-label">Vos (Informal you)</div>
+    <div class="cell">est&aacute;s ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estuviste ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estabas ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estar&iacute;as ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estar&aacute;s ar-ando; er-iendo; ir-endo</div>
+
+    <!-- Row 4 -->
+    <div class="cell row-label">&#201;l/Ella/Usted</div>
+    <div class="cell">est&aacute; ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estuvo ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estaba ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estar&iacute;a ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estar&aacute; ar-ando; er-iendo; ir-endo</div>
+
+    <!-- Row 5 -->
+    <div class="cell row-label">Nosotros/as</div>
+    <div class="cell">estamos ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estuvimos ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">est&aacute;bamos ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estar&iacute;amos ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estaremos ar-ando; er-iendo; ir-endo</div>
+  
+  <!-- Row 6 -->
+    <div class="cell row-label">Vosotros (Plural you)</div>
+    <div class="cell">est&aacute;is ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estuvisteis ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estabais ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estar&iacute;ais ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estar&eacute;is ar-ando; er-iendo; ir-endo</div>
+
+    <!-- Row 7 -->
+    <div class="cell row-label">Ellos/as/Uds</div>
+    <div class="cell">est&aacute;n ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estuvieron ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estaban ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estar&iacute;an ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">estar&aacute;n ar-ando; er-iendo; ir-endo</div>
+  </div>
+  <hr />
+
+<section id="Perfect">
+  <h2>Perfect</h2>
+  </section>
+    <p>The perfect tense literally means the “complete” tense. This is because it indicates an action that is finished. The perfect tense often puts a focus on the present even if the event occurred in the past.</p>
+    <div class="grid">
+    <!-- Header Row -->
+    <div class="cell header">Person</div>
+    <div class="cell header">Present</div>
+    <div class="cell header">Preterit</div>
+    <div class="cell header">Past</div>
+    <div class="cell header">Conditional</div>
+    <div class="cell header">Future</div>
+<!-- Row 1 -->
+    <div class="cell row-label">Yo</div>
+    <div class="cell">he ar-ado; er/ir-ido</div>
+    <div class="cell">hube ar-ado; er/ir-ido</div>
+    <div class="cell">hab&iacute;a ar-ado; er/ir-ido</div>
+    <div class="cell">habr&iacute;a ar-ado; er/ir-ido</div>
+    <div class="cell">habr&eacute; ar-ado; er/ir-ido</div>
+
+    <!-- Row 2 -->
+    <div class="cell row-label">T&uacute;</div>
+    <div class="cell">has ar-ado; er/ir-ido</div>
+    <div class="cell">hubiste ar-ado; er/ir-ido</div>
+    <div class="cell">hab&iacute;as ar-ado; er/ir-ido</div>
+    <div class="cell">habr&iacute;as ar-ado; er/ir-ido</div>
+    <div class="cell">habr&aacute;s ar-ado; er/ir-ido</div>
+
+    <!-- Row 3 -->
+    <div class="cell row-label">Vos (Informal you)</div>
+    <div class="cell">has ar-ado; er/ir-ido</div>
+    <div class="cell">hubiste ar-ado; er/ir-ido</div>
+    <div class="cell">hab&iacute;as ar-ado; er/ir-ido</div>
+    <div class="cell">habr&iacute;as ar-ado; er/ir-ido</div>
+    <div class="cell">habr&aacute;s ar-ado; er/ir-ido</div>
+
+    <!-- Row 4 -->
+    <div class="cell row-label">&#201;l/Ella/Usted</div>
+    <div class="cell">ha ar-ado; er/ir-ido</div>
+    <div class="cell">hubo ar-ado; er/ir-ido</div>
+    <div class="cell">hab&iacute;a ar-ado; er/ir-ido</div>
+    <div class="cell">habr&iacute;a ar-ado; er/ir-ido</div>
+    <div class="cell">habr&aacute; ar-ado; er/ir-ido</div>
+
+    <!-- Row 5 -->
+    <div class="cell row-label">Nosotros/as</div>
+    <div class="cell">hemos ar-ado; er/ir-ido</div>
+    <div class="cell">hubimos ar-ado; er/ir-ido</div>
+    <div class="cell">hab&iacute;amos ar-ado; er/ir-ido</div>
+    <div class="cell">habr&iacute;amos ar-ado; er/ir-ido</div>
+    <div class="cell">habremos ar-ado; er/ir-ido</div>
+
+     <!-- Row 6 -->
+    <div class="cell row-label">Vosotros (Plural you)</div>
+    <div class="cell">hab&eacute;is ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">hubisteis ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">hab&iacute;ais ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">habr&iacute;as ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">hab&eacute;is ar-ando; er-iendo; ir-endo</div>
+
+    <!-- Row 7 -->
+    <div class="cell row-label">Ellos/as/Uds</div>
+    <div class="cell">han ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">hubieron ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">hab&iacute;an ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">habr&iacute;an ar-ando; er-iendo; ir-endo</div>
+    <div class="cell">hubr&aacute;n ar-ando; er-iendo; ir-endo</div> 
+
+  </div>
+  <hr />
+
+<section id="Perfect Subjective">
+  <h2>Perfect Subjective</h2>
+  </section>
+    <p>The perfect subjective verb form is a grammatical term that indicates that an action or circumstance occurred earlier than the time under consideration, often focusing on the resulting state rather than the occurrence itself. In English, the perfect tense is formed using the auxiliary verb "have" or "has" together with the past participle of the main verb. For example, "I have finished my homework" indicates that the action of finishing homework occurred before the time of speaking. The perfect tense is used to express completed actions or states, and it can be contrasted with other tenses such as the imperfect, which refers to past actions or states that are not completed.</p>
+  <div>
+    <div class="grid_4">
+    <div class="cell header">Person</div>
+    <div class="cell header">Present</div>
+    <div class="cell header">Past</div>
+    <div class="cell header">Future</div>
+
+    <div class="cell row-label">Yo</div>
+    <div class="cell">haya ar-ado; er/ir-ido</div>
+    <div class="cell">hubiera, hubiese ar-ado; er/ir-ido</div>
+    <div class="cell">hubiere ar-ado; er/ir-ido</div>
+    
+
+    <!-- Row 2 -->
+    <div class="cell row-label">T&uacute;</div>
+    <div class="cell">hayas ar-ado; er/ir-ido</div>
+    <div class="cell">hubieras, hubieses ar-ado; er/ir-ido</div>
+    <div class="cell">hubieres ar-ado; er/ir-ido</div>
+   
+
+    <!-- Row 3 -->
+    <div class="cell row-label">Vos (Informal you)</div>
+    <div class="cell">hayas ar-ado; er/ir-ido</div>
+    <div class="cell">hubieras, hubieses ar-ado; er/ir-ido</div>
+    <div class="cell">hubieres ar-ado; er/ir-ido</div>
+    
+
+    <!-- Row 4 -->
+    <div class="cell row-label">&#201;l/Ella/Usted</div>
+    <div class="cell">haya ar-ado; er/ir-ido</div>
+    <div class="cell">hubiera, hubiese ar-ado; er/ir-ido</div>
+    <div class="cell">hubiere ar-ado; er/ir-ido</div>
+    
+
+    <!-- Row 5 -->
+    <div class="cell row-label">Nosotros/as</div>
+    <div class="cell">hayamos ar-ado; er/ir-ido</div>
+    <div class="cell">hubi&eacute;ramos, hubi&eacute;semos ar-ado; er/ir-ido</div>
+    <div class="cell">hubi&eacute;remos ar-ado; er/ir-ido</div>
+
+    <!-- Row 6 -->
+    <div class="cell row-label">Vosotros (Plural you)</div>
+    <div class="cell">hay&aacute;is ar-ado; er/ir-ido</div>
+    <div class="cell">hubierais, hubieseis ar-ado; er/ir-ido</div>
+    <div class="cell">hubiereis ar-ado; er/ir-ido</div>
+
+    <!-- Row 7 -->
+    <div class="cell row-label">Ellos/as/Uds</div>
+    <div class="cell">hayan ar-ado; er/ir-ido</div>
+    <div class="cell">hubieran, hubiesen ar-ado; er/ir-ido</div>
+    <div class="cell">hubieren ar-ado; er/ir-ido</div>
+
+ </div>
+<hr /> 
+
+<section id="Informal Future">
+ <h2>Informal Future</h2>
+ </section>
+    <p>The informal future verb form, often referred to as the periphrastic future, is formed using the verb "To go" conjugated in the present tense. For example, "I will go." This form is commonly used in informal contexts to express future intentions or plans. Unlike the formal future tense, which typically uses "will," the informal future is more casual and often lacks the formal structure of auxiliary verbs.</p>
+  <div>
+      <div class="grid_3">
+    <div class="cell header">Person</div>
+    <div class="cell header">Informal Future</div>
+    <div class="cell header">-</div>
+
+    <div class="cell row-label">Yo</div>
+    <div class="cell">voy a (verb)</div>
+    <div class="cell">-</div>
+    
+
+    <!-- Row 2 -->
+    <div class="cell row-label">T&uacute;</div>
+    <div class="cell">vas a (verb)</div>
+    <div class="cell">-</div>
+   
+
+    <!-- Row 3 -->
+    <div class="cell row-label">Vos (Informal you)</div>
+    <div class="cell">vas a (verb)</div>
+    <div class="cell">-</div>
+    
+
+    <!-- Row 4 -->
+    <div class="cell row-label">&#201;l/Ella/Usted</div>
+    <div class="cell">va a (verb)</div>
+    <div class="cell">-</div>
+    
+
+    <!-- Row 5 -->
+    <div class="cell row-label">Nosotros/as</div>
+    <div class="cell">vamos a (verb)</div>
+    <div class="cell">-</div>
+
+    <div class="cell row-label">Vosotros (Plural you)</div>
+    <div class="cell">vais a (verb)</div>
+    <div class="cell">-</div>
+
+     <div class="cell row-label">Ellos/as/Uds</div>
+    <div class="cell">van a (verb)</div>
+    <div class="cell">-</div>   
+ </div>
+       <hr />    
+          <section id="Spanish verb forms">
+            <p></p>
+          <h2>Spanish Verb Forms</h2>
+          </section>
+          <section id="section a">
+         <p></p>
+          <h3>A</h3>
+        </section>
+          <table>
+            <tr>
+                <td><a href="https://www.spanishdict.com/conjugate/abrir">Abrir</a></td>
+                <td>To open</td>
+                <td><p><b>Indicative <u><b><i>Present</i></b></u> of Abrir</b></p>
+                <ul>
+                    <li>Yo <u><b><i>abro</i></b></u> (I open)</li>                     
+                    
+                    <li> T&uacute; <u><b><i>abres</i></b></u> (you open)</li>
+                           
+                    <li> &#201;l/Ella/Usted <u><b><i>abre</i></b></u> (he/she opens)</li>
+                        
+                    <li>Nosotros/as <u><b><i>abrimos</i></b></u> (we open)</li>
+                        
+                    <li>Vosotros/as <u><b><i>abr&iacute;s</i></b></u> (you open)</li>
+                       
+                    <li>Ellos/Ellas/Ustedes <u><b><i>abren</i></b></u> (they open)</li>
+                      <p></p>             
+                </ul>
+                  <p><p><b>Indicative <u><b><i>Preterite (past tense)</i></b></u> of Abrir</b></p></p>
+                  <ul>
+                    <li>Yo <u><b><i>abr&iacute;</i></b></u> (I opened)</li>
+                                          
+                    <li> T&uacute; <u><b><i>abriste</i></b></u> (you opened)</li>
+                           
+                    <li> &#201;l/Ella/Usted <u><b><i>abri&oacute;</i></b></u> (they opened)</li>
+                        
+                    <li>Nosotros/as <u><b><i>abrimos</i></b></u> (we opened)</li>
+                        
+                    <li>Vosotros/as <u><b><i>abristeis</i></b></u> (you opened)</li>
+                        
+                    <li>Ellos/Ellas/Ustedes <u><b><i>abrieron</i></b></u> (they opened)</li>
+               </ul>
+              
+               </ul>
+                  <p><p><b>Indicative <u><b><i>Imperfect (was/were)</i></b></u> of Abrir</b></p></p>
+                  <ul>
+                    <li>Yo <u><b><i>abr&iacute;a</i></b></u> (I was opening)</li>
+                                          
+                    <li> T&uacute; <u><b><i>abr&iacute;as</i></b></u> (you were opening)</li>
+                           
+                    <li> &#201;l/Ella/Usted <u><b><i>abr&iacute;a</i></b></u> (they were opening)</li>
+                        
+                    <li>Nosotros/as <u><b><i>abr&iacute;amos</i></b></u> (we were opening)</li>
+                        
+                    <li>Vosotros/as <u><b><i>abr&iacute;ais</i></b></u> (you were opening)</li>
+                        
+                    <li>Ellos/Ellas/Ustedes <u><b><i>abr&iacute;an</i></b></u> (they were opening)</li>
+               </ul>
+
+               </ul>
+                  <p><p><b>Indicative <u><b><i>Conditional (would)</i></b></u> of Abrir</b></p></p>
+                  <ul>
+                    <li>Yo <u><b><i>Abrir&iacute;a</i></b></u> (I would open)</li>
+                                          
+                    <li> T&uacute; <u><b><i>abrir&iacute;as</i></b></u> (you would open)</li>
+                           
+                    <li> &#201;l/Ella/Usted <u><b><i>abrir&iacute;a</i></b></u> (they would open)</li>
+                        
+                    <li>Nosotros/as <u><b><i>abrir&iacute;amos</i></b></u> (we would open)</li>
+                        
+                    <li>Vosotros/as <u><b><i>abrir&iacute;ais</i></b></u> (you would open)</li>
+                        
+                    <li>Ellos/Ellas/Ustedes <u><b><i>abrir&iacute;an</i></b></u> (they would open)</li>
+               </ul>
+              
+              </td>
+                
+
+            </tr>
+
+            <tr>
+                <td><a href="https://www.spanishdict.com/conjugate/acabar">Acabar</a></td>
+                <td>To finish, to end</td>
+            </tr>
+
+             <tr>
+                <td><a href="https://www.spanishdict.com/conjugate/acampar">Acampar</a></td>
+                <td>To camp</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.spanishdict.com/conjugate/acompa%C3%B1ar">Acompa&ntilde;ar</a></td>
+                <td>To go with, to accompany</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.spanishdict.com/conjugate/acordar">Acordar</a></td>
+                <td>To agree</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.spanishdict.com/conjugate/acostar">Acostar</a></td>
+                <td>To put to bed</td>
+            </tr>
+ 
+            <tr>
+                <td><a href="https://www.spanishdict.com/conjugate/agregar">Agregar</a></td>
+                <td>To put to bed</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.spanishdict.com/conjugate/ahorrar">Ahorrar</a></td>
+                <td>To save</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.spanishdict.com/conjugate/almorzar">Almorzar</a></td>
+                <td>To have lunch</td>
+            </tr>
+
+            <tr>
+                <td><a href="https://www.spanishdict.com/conjugate/alquilar">Alquilar</a></td>
+                <td>To rent</td>
+            </tr>
+
+             <tr>
+                <td><a href="https://www.spanishdict.com/conjugate/amar">Amar</a></td>
+                <td>To love</td>
+            </tr> 
+
+            <tr>
+              <td><a href="https://www.spanishdict.com/conjugate/Anadir">A&ntilde;adir</a></td>
+              <td>To add</td>
+            </tr>
+            
+            <tr>
+                <td><a href="https://www.spanishdict.com/conjugate/aprender">Aprender</a></td>
+                <td>To learn</td>
+            </tr>
+                    
+            <tr>
+                <td><a href="https://www.spanishdict.com/conjugate/aprobar">Aprobar</a></td>
+                <td>To approve</td>
+            </tr>        
+            
+             <tr>
+                <td><a href="https://www.spanishdict.com/conjugate/asar">Asar</a></td>
+                <td>To roast, to grill</td>
+            </tr>                       
+        </table>
+          <p><a href="#Spanish verb forms">Return to top</a></p>
+        <hr />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>

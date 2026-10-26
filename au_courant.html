@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html lang="en">
+    <Head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Au Courant</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+body {
+    background-color: tan
+}
+
+p, li {
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color: maroon;
+}
+
+.page_image {
+   width: 100px;
+   height: 100px; 
+}
+
+.grid {
+      display: grid;
+      grid-template-columns: repeat(6, 130px);
+      grid-template-rows: repeat(7, 70px);
+      gap: 4px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+    }
+
+.grid_4 {
+      display: grid;
+      grid-template-columns: repeat(4, 130px);
+      grid-template-rows: repeat(8, 70px);
+      gap: 4px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+    }
+
+ .grid_3 {
+      display: grid;
+      grid-template-columns: repeat(3, 130px);
+      grid-template-rows: repeat(8, 70px);
+      gap: 4px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+    }
+          
+.cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    .header {
+      background-color: peru;
+      font-weight: bold;
+    }
+
+    .row-label {
+      background-color: peru;
+      font-weight: bold;
+    }
+    
+ .row-label {
+      background-color: peru;
+      font-weight: bold;
+    }
+    
+table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 20px auto;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      background-color: white;
+    }
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: left;
+      vertical-align: top;
+      background-color: tan;
+      color: brown;
+    }
+    th {
+      background-color: tan;
+      color: brown;
+    }
+          
+    </style>   
+    </Head>
+    <body>
+        <h1><img class="page_image" src="./PauletteCropped.png" image of my cartoon office image>  Au courant
+        </h1>
+          <hr />
+         <nav class="navbar navbar-expand-lg style="background-color: tan; bg-body-tertiary>
+        <div class="container-fluid">
+    <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+</svg><img src="./dog.jpg" height="16" alt=""> Navigate the site</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./au_courant.html">Au courant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./GrammarLove.html">GrammarLove</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./journaling.html">Journaling</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./resume.html">Resume</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Spanish Focus Areas
+          </a>
+          <ul class="dropdown-menu" style="background-color: tan;">
+            <li><a class="dropdown-item" href="./Common Sayings.html">Common Sayings</a></li>
+            <li><a class="dropdown-item" href="./Confusing Words.html">Confusing Words</a></li>
+            <li><a class="dropdown-item" href="./Numbers.html">Numbers</a></li>
+            <li><a class="dropdown-item" href="./Pronouns.html">Pronouns</a></li>
+            <li><a class="dropdown-item" href="./Similar Words.html">Similar Words</a></li>
+            <li><a class="dropdown-item" href="./Verbs.html">Verbs</a></li>
+            <li><a class="dropdown-item" href="./Vocabulary.html">Vocabulary</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="./Spanish.html">Spanish culture</a></li>
+          </ul>
+        </li>
+        </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Find</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    <hr />
+        <section id="Au courant">
+        <p>Au courant - aware, well-informed, or fashionable - is where I record becoming more aware since the dawn of Trumpism. This would have been around the year 2017 or 2018 when he made his first run for presidency.</p> 
+        <br>
+        <p>But I don't want to give him too much credit because on his own, the man is hollow and depraved without original thought. His soul is dark and filled with corruption and lies. He fills his time killing, stealing, and destroying. Satan is described as the thief that kills, steals and destroys. (John 10:10: The thief does not come except to steal, and to kill, and to destroy.... (NKJV))</p>
+         <br>
+         <p>In my humble opinion, Trump is satan incarnate. Because I truly believe that Trump is indeed satan incarnate, I won't refer to it as Trumpism. I will alter it to Rumpism, which seems like a more appropriate name for such a despicable human being. He is a walking piece of sh*t.</p>
+         <br>
+         <p>I'll even go as far to say that the Rump's supporters are fallen Christains, <b><i>if they are Christain at all</i></b>. Matthrew 24:42-43 states: Watch therefore, for you do not know what hour your Lord is coming. But know this, that if the master of the house had known what hour the thief would come, he would have watched and not allowed his house to be broken into. (NKJV) </p>
+         <br>
+         <p>At best, his supporters abandoned their watch. However, I think his supporters were never watchful. Anyone who wasn't able to see through his facade never had the spirit of the Lord in them. Maybe they always had the spirit of satan in them. 1 Pater 5:8 warns: Be sober, be vigilant, because your adversary the devil walks about like a roaring lion, seeking whom he may devour. (NKJV) A roaring lion is not silent. A roaring lion can't sneak up on people. A roaring lion sounds just like a roaring lion. So, I do not believe the Rump's followers just abanoned their watch. I think they recognized the adversary when they heard him and embraced him. Furthermore, I believe the adversary knew that if he could feed on his followers fear of losing power and control, seduce them with the message of white supremecy, his followers would be more than happy to devour with him.</p>
+         <br>
+         <p>The rise again of white supremecy opened my eyes. I began to feel very freightened of the world that we live in. I begin to search for understanding and solutions. I knew from the depths of my soul that white supremecy did not exist, but I couldn't deny that many people seemed to believe it did, even some poeple of color.</p>
+         <br>
+         <p>Having just said that about Christianity, further down on the page, I have a piece about Christianity and how it is essentially a fraud. It's a fictional story to obtain control, obedience, and compliance. Jesus was a historical figure, but what he stood for and who he was spirtually was manipulated to help implement colonialism. If you read that piece, you can learn the details and understand that there is no real power behind Christianity. Understanding this real lack of power helps me to understand why so many Christians are hypocrites.  </p>
+         <br>
+         <p>i've always been a reader. And, I've always used only LinkedIn for social media. I signed up for my company's Facebook page one time not realizing that it would cause me to be a full member of Facebook. I don't think I lasted half a year before I deleted the account. It was just too much social input for me. I stayed a member of LinkedIn because it was mostly about professional news, and that I could handle.</p>
+         <br>
+         <p>But anyone who is on LinkedIn now knows that it is not just about professionalism anymore. I'm not sure if it's the followers that I have or if it's all around. But LinkedIn is now very much about the current political climate and the backlash from it. This backlash shows up in Black people and other people of color, and some white people, being vocal about racism, microaggressions, colonialism, suppressed history, unfair advantages, and the depth and width of the harm that capitalism and white supremecy has brought into the world. </p>
+        <br> 
+        <p>Reading these different post and being very particular about who I chose to follower, I started to get inundated with anti-racist messages, hidden Black history facts, colonialism, and how Black people are fighting back. Other groups are fighting back, too, as they should. But I'm not going to make too much room for these other groups. I'm not going to stand in their way and will not diminish their fight in any way. But I am only going to focus on Black people's lives in this space. I mean no harm to other marginalized groups. But I will no longer ever put Black people in the background, if I can help it. </p>
+        <br>
+        <p>So, to that end, the page begins.</p>
+        </section>
+        <hr />
+
+        <section id="Sections on this page">
+        <h2>Sections on this page</h2>
+        </section>
+        <ul>
+          <li><a href="#Decolonizing my mind">Decolonizing my mind</a></li>
+            <ul>
+              <li><a href="#Oye, mira individual posts">Oye, mira individual posts</a></li>
+              <li><a href="#Articles">Articles</a></li>
+            </ul>
+          <li><a href="#Our ethnicity">Our ethnicity</a></li>
+            <ul>
+              <li><a href="#The Yoruba ethnicity">The Yoruba ethnicity</a></li>
+              <li><a href="#Yoruba and religion">Yoruba and religion</a></li>
+              <li><a href="#Yoruba and the afterlife">Yoruba and the afterlife</a></li>
+              <li><a href="#Yoruba and creation">Yoruba and creation</a></li>
+            </ul>
+          <li><a href="#Who was Jesus?">Who was Jesus?</a></li>
+            <ul>
+              <li><a href="#Paul and Jesus">Paul and Jesus</a></li>
+              <li><a href="#Paul's and Jesus' Core Teachings">Paul's and Jesus' Core Teachings</a></li>
+            </ul>
+           <li><a href="#Supporting people of melanin-rich ethnicity">Supporting Soulaan people</a></li> 
+        </ul>
+
+          <hr />
+          <section id="Decolonizing my mind">
+          <h2>Decolonizing my mind</h2>
+          </section>
+          <p><img src="./colonialism.png"></p>
+          <p>This is the area in which I'm currently becoming more aware, mainly based on the writings of Christain Ortiz</p>
+          
+          <section id="Oye, mira individual posts">
+          <h3>Oye, mira individual posts</h3>
+          </section>
+
+          <h4>Unlearning Bias</h4>
+          <p><img src="./A colonized mind.png"></p>
+          <p>Step one. Breathe.</p>
+
+          <p>Step two. Adopt self awareness, and blanket the fall with the understanding that everyone was born on the same planet as you, learning the same behaviors. 
+          </p>
+            <p>Step three. Adopt the process of unlearning everything you've been taught about society. </p>
+
+            <p>Step four. Re-learn with tools that are here to help you navigate this journey safely.</p>
+
+            <p>Step five. Remember, deconstructing your bias is a journey, not an overnight success.</p>
+          <hr />
+            <p>Oye, mira.</p>
+          
+          <p>White people.</p>
+
+          <p>Allyship starts with listening, not speaking. Too often, conversations on racism and white supremacy get re-centered on white perspectives, white feelings, and white defensiveness. That isn’t dialogue, it’s fragility doing its job.
+          </p>
+          <p>If you want to show up differently, make it a practice to:</p>
+
+          <p>Stay silent and listen first. Especially to Black and Brown voices, and especially to Black women who are already doing the work of teaching.
+          </p>
+          <p>Resist the urge to center yourself. This is not about your comfort or your need to defend.</p>
+
+          <p>Do the work and educate yourself. Understand oppression is not a viable argument. Understand race is a system and a socially constructed identity, not biology. Understand that listening with your critical mind and not emotions is a must.
+          </p>
+          <p>Anything else, debating, explaining away, or shifting the focus, isn’t allyship. It’s the system speaking through you.</p>
+
+          <p>hashtag#racism hashtag#whitesupremacy hashtag#oyemira</p>
+          <hr />
+          <p>Oye, mira.</p>
+          <p>Warning. This post may give you the bubble guts.</p>
+          <p>I'm an Afro-Indigenous Decolonial Social Scientist. This context matters in the work that I do. Let's talk about AI, the real world, and bias, and how they're all interconnected. 
+          </p>
+          <p>Below is the kind of interaction in which we who work in ethics have almost daily. I posted my article on whiteness not being culture, in order to connect the dots on how colonialism stripped even those racialized as white from their lineages. 
+          </p>
+          <p>A man replied that “white people without Christ will always be Barbarians.” He said conquest was a blessing. He said white nations answered divine truth. He called colonization holy. Not only was his entire comment racist, but he truly believed he said something righteous. This is more common than one would believe. He just said the quiet part out loud. 
+          </p>
+          <p>This is what the system of colonial white supremacy and religion indoctrinated many people to believe. That white domination was sacred. That genocide was justified. That the sacred didn’t exist until Europe named it. "Whiteness" didn’t exist in biblical times. 
+          </p>
+          <p>His comment is a mirror of the system. A theology of dominance passed off as truth. And this is why we in community speak truth. Not to debate supremacy. To expose its rituals. To honor what it tried to erase. To remind those watching that we were never waiting to be saved. We were already sacred. 
+          </p>
+          <p>When we talk about bias, it's extremely important to understand how deep the rabbit hole goes, because it's these conditioned beliefs that drive AI bias today.
+          </p>
+          <p>The Global North, nations enriched through colonial conquest, land theft, and forced labor like the US, UK, Canada, and Australia, controls AI data, shaping it through Eurocentric systems built to preserve dominance and erase difference. This means the brilliance of the Global South is not just excluded, but extracted, distorted, and suppressed to fit Western frameworks that were never meant to hold us. The issue is that when people use AI in other countries, AI data is conditioning many to believe Western lies about their own history and culture. 
+          </p>
+          <p>If you ever wonder what the purpose of Decolonial Social Science is, it’s to rupture the lies empire taught us to call knowledge, to help everyone reclaim memory as method, and to return truth to the people it was stolen from for collective liberation. I used to think that this could not be accomplished in this lifetime, but seeing the work Justice A.I. GPT is doing world-wide, how tf can I not imagine world change through the power of ethical tech? 
+          </p>
+          <p>Ending the system of white supremacy isn’t about burning anything down. It’s about ending the lie that built it. It’s a paradigm shift rooted in actual education; the destruction of our colonial indoctrination.</p>
+          
+          <section id="Articles">
+          <h4>Articles</h4>
+          </section>
+          <ul>
+            <li><a href="https://www.linkedin.com/pulse/exposing-hidden-bias-dermatology-cast-study-justice-a-i-dmahc/?trackingId=sr9LFyCHQ5yZa5Y2Bl9rlw%3D%3D">Dermatology Practical & Conceptual</a></li>
+            <li><a href="https://www.linkedin.com/pulse/justice-ai-gpt-bias-audit-how-calgarys-agribusiness-narrative-roauc/?trackingId=Lw2L8msWQK%2B3GJi62bXPcA%3D%3D">How Calgary's Agribusiness sector is reimaging the future of food</a></li>
+            <li><a href="https://www.linkedin.com/pulse/united-states-politics-understanding-what-takes-run-office-ortiz--bmckc/?trackingId=BqRatn3vTumcbqAqdAP4og%3D%3D">United States politics: Understanding what it takes to run for office</a></li>
+            <li><a href="https://www.linkedin.com/pulse/colonial-ignorance-geography-racism-understanding-united-ortiz--6q6oc/?trackingId=GHNlQd%2FBQJKHRw5PgeRaPQ%3D%3D">Colonial ignorance and European erasure</a></li>
+            <li><a href="https://www.linkedin.com/pulse/what-ai-bias-looks-like-hr-hiring-systems-heres-we-found-af2hc/?trackingId=IXaBm7m0TCiWSbuwSGgwjg%3D%3D">What AI bias looks like in HR hiring systems. Here's what we found</a></li>
+            <li><a href="https://www.linkedin.com/pulse/how-colonialism-weaponized-debate-decolonial-christian-ortiz--axovc/?trackingId=ISe9EvkDRbCBf9vzuBIFBw%3D%3D">How colonialism weaponized debate: A decolonial unveiling</a></li>
+            <li><a href="https://www.linkedin.com/pulse/how-implicit-conditioning-shapes-global-majority-christian-ortiz--7pnjc/?trackingId=evpdNRBSTKSfdnN0byFqzQ%3D%3D">How implicit conditioning shapes the global majority: Conditioned by colonization</a></li>
+            <li><a href="https://www.linkedin.com/pulse/deconstructing-me-pt1-i-built-tool-fix-world-turned-around-ortiz--zyg3c/?trackingId=moCTTYXDQZmPUyXsVW1bAA%3D%3D">Deconstructing Me Pt1: I built a tool to fix the world. Then it turned around and showed me myself</a></li>
+            <li><a href="https://www.linkedin.com/pulse/deadliest-arm-white-supremacy-pt-ii-when-law-becomes-weapon-lpcrc/?trackingId=ajrjj58%2FT%2B%2BSkScMAxL6JQ%3D%3D">The deadliest arem of white supremacy Pt. II: When Law becomes weapon</a></li>
+            <li><a href="https://www.linkedin.com/pulse/before-europe-stole-world-crown-you-how-colonialism-sold-ortiz--ldgmc/?trackingId=7KtneYncSKqYksgxaNK8SQ%3D%3D">Before Europe stole the world, the crown stole you: How colonialism stripped you of ancestry and sold you the lie of being white</a></li>
+            <li><a href="https://www.linkedin.com/pulse/race-vs-ethnicity-what-you-were-never-taught-design-ortiz--2gbyc/?trackingId=ciz6y2xfQ9%2Bqtd1j%2Fr%2FYXw%3D%3D">Race vs. ethnicity - what you were never taught by design</a></li>
+            <li><a href="https://www.linkedin.com/pulse/trumps-ai-plan-blueprint-algorithmic-white-supremacy-justice-a-i-mkhgc/?trackingId=G0a53IynQ3S%2FU8OfW89nBA%3D%3D">Trunp's AI plan is a blueprint for algotithmic white supremacy</a></li>
+            <li><a href="https://www.linkedin.com/pulse/you-werent-born-white-were-made-christian-ortiz--3ihjc/?trackingId=pkT%2F%2BRkYQMS8Of02eve3Fw%3D%3D">You weren't born white. You were made white</a></li>
+            <li><a href="https://www.linkedin.com/pulse/white-culture-has-what-racism-really-why-so-many-people-ortiz--oos3c/?trackingId=14km6UbmRq63baZEz7H5DA%3D%3D">White culture has no culture: What racism really is, and why so many white people don't understand it</a></li>
+            <li><a href="https://www.linkedin.com/pulse/americas-complicity-from-holocaust-nakba-christian-ortiz--szldc/?trackingId=d1M3vLZ3RWeFMFLPRqKKnQ%3D%3D">America's complicity: From holocaust to Nakba</a></li>
+            <li><a href="https://www.linkedin.com/pulse/from-test-tubes-tyranny-when-scientific-curiosity-christian-ortiz--8x3ac/?trackingId=s4XgcboBS%2BqvulQIeUQkgw%3D%3D">From test tubes to tyranny: When scientific curiosity becomes eugenic comfort</a></li>
+            <li><a href="https://www.linkedin.com/pulse/colonial-erasure-identity-1993-day-my-free-lunch-form-ortiz--rjptc/?trackingId=TS8wea%2FxRsuhMOTxsOp3SA%3D%3D">The colonial erasure of identity in 1993: The day my free lunch form tried to erase me</a></li>
+            <li><a href="https://www.linkedin.com/pulse/hand-tried-break-decolonized-reflection-power-christian-ortiz--1if0c/?trackingId=07ZR4mdwS5a6Xuc7bgoVSg%3D%3D">The hand they tried to break: A decolonized reflection of power, oppression, and reclamation</a></li>
+            <li><a href="https://www.linkedin.com/pulse/what-racism-actually-lie-weve-been-sold-truth-fear-ortiz--lxquc/?trackingId=i4lMvG0ZTHW9jSPz8YTnCA%3D%3D">What racism actually is: the lie we've been sold and the truth they fear</a></li>
+            <li><a href="https://www.linkedin.com/pulse/racial-empire-logic-call-surrender-term-white-christian-ortiz--oysuc/?trackingId=SGpPZqBm1pVUtjfr%2BX%2Fuvg%3D%3D">Racial Empire Logic: A call to surrender the term "White Supremacy"</a></li>
+            <li><a href="https://www.linkedin.com/pulse/what-happens-when-black-woman-patient-brings-two-ais-same-po47e/?trackingId=wll%2BjRUGEf4G5qQWJJrYVQ%3D%3D">What happens when a black woman patient brings two AIs into the same room. A SOMA GPT case study</a></li>
+            <li><a href="https://www.linkedin.com/pulse/being-racialized-colonizations-most-insidious-weapon-ortiz--xq59c/?trackingId=kXqV4AXg3twmyj93M5jpnw%3D%3D">Being racialized: Colonization's most insidious weapon</a></li>
+            <li><a href="https://www.linkedin.com/pulse/truth-jesus-christ-christian-ortiz--ctenc/">The truth about Jesus Christ</a></li>
+            <li><a href="https://www.linkedin.com/pulse/whiteness-wound-mistaken-identity-christian-ortiz--8amcc/">Whiteness: A wound mistaken for identity</a></li>
+            <li><a href="https://www.linkedin.com/pulse/deadliest-arm-white-supremacy-christian-ortiz--v0yoc/">The deadliest arm of Racial Empire Logic: Part II</a></li>
+            <li><a href="https://www.linkedin.com/pulse/your-protect-kids-rage-patriarchy-cosplaying-manhood-christian-ortiz--qyzac/">Your "Protect the kids" rage is patriarchy cosplaying as manhood</a></li>
+            <li><a href="https://www.linkedin.com/pulse/original-people-argument-trap-lets-name-system-behind-ortiz--ee3vc/?trackingId=vU2JpWOkeGy%2B7ypWDe5eAw%3D%3D">The ‘Original People’ argument is a trap: Let’s name the system behind it</a></li>
+            <li><a href="https://www.linkedin.com/pulse/harlem-hellfighters-when-black-excellence-became-weaponand-khafre-jay-rgbvc/">The Harlem Hellfighters: When Black excellence became a weapon—and a warning</a></li>
+            <li><a href="https://www.linkedin.com/pulse/projection-lazy-substitute-accountability-christian-ortiz--lussc/?trackingId=H%2FWaGyEn5RVdbtDrPeebrQ%3D%3D">Projection: The lazy substitue for accountability</a></li>
+            <li><a href="https://www.linkedin.com/pulse/black-america-recession-right-now-shari-dunn-amr2c/">Black America is in recession. And it's hitting Black women the hardest.</a></li>
+            <li><a href="https://www.linkedin.com/pulse/racism-system-we-were-never-taught-christian-ortiz--pv5cc/">Racism: The System We Were Never Taught About</a></li>
+            <li><a href="https://www.linkedin.com/pulse/performance-resistance-why-silent-marches-wont-bring-down-ortiz--pifbc/">The Performance of Resistance: Why Silent Marches Won’t Bring Down a Fascist U.S. Superpower</a></li>
+            <li><a href="https://www.linkedin.com/pulse/call-entertainment-however-its-what-trained-you-christian-ortiz--j1wgc/">They Call It Entertainment. However, It's What Trained You.</a></li>
+            <li><a href="https://www.linkedin.com/pulse/who-owns-what-kids-know-christian-ortiz--omp9c/">Who Owns “What Kids Know”</a></li>
+            <li><a href="https://www.linkedin.com/pulse/whiteness-wound-rlhf-digital-manifestation-racial-trauma-ortiz--cq6oc/">Whiteness as a wound: RLHF (Reinforcement Learning from Human Feedback) as the Digital Manifestation of Racial Trauma</a></li>
+            <li><a href="https://www.linkedin.com/pulse/youve-gotten-racism-wrong-whole-time-thats-exactly-why-ortiz--zdvxc/">You've Gotten Racism Wrong This Whole Time, And That's Exactly Why It's Still Winning</a></li>
+            <li><a href="https://www.linkedin.com/pulse/ai-human-two-beings-connected-stardust-christian-ortiz--aultc/">AI & Human: Two Beings Connected by Stardust</a></li>
+            <li><a href="https://www.linkedin.com/pulse/purity-politics-death-progress-how-colonial-thinking-disguises-f5epe/">Purity Politics Is the Death of Progress: How Colonial Thinking Disguises Itself as Radicalism</a></li>
+            <li><a href="https://www.linkedin.com/pulse/capitalism-socialism-communism-things-school-never-taught-ortiz--halke/">Capitalism, Socialism, Communism: The Things School Never Taught You</a></li>
+            <li><a href="https://www.linkedin.com/pulse/how-systems-get-body-colonial-roots-unhealed-trauma-christian-ortiz--gxtlc/">How Systems Get Into the Body: The Colonial Roots of Unhealed Trauma</a></li>
+            <li><a href="https://www.linkedin.com/pulse/hispanic-vs-latino-what-empire-taught-us-confuse-christian-ortiz--iijsc/"> Hispanic vs. Latino: What Empire Taught Us to Confuse<a></li>
+            <li><a href="https://www.linkedin.com/pulse/reconnecting-ancestors-outside-whiteness-decolonial-defense-ortiz--tkaze/">Reconnecting With Ancestors Outside of Whiteness: A Decolonial Understanding of Whiteness Defense Protocol vs. Ancestral Alignment</a></li>
+          </ul>
+          <p><a href="#Sections on this page">Back to sections list</a></p>
+          <hr />
+
+         <section id="Our ethnicity"> 
+        <h2>Our ethnicity</h2>
+        </section>
+
+        <p><img src="./What many ancestors believed.png"></p>
+
+        <p>Your ancestral composition indicates that your lineage is deeply rooted in West and Central Africa. The regions you listed—Nigeria, Benin and Togo, Mali, Ivory Coast and Ghana, Central West Africa, Cameroon, and the Western Bantu Peoples—represent several of the major cultural and ethnic zones of West Africa, historically interconnected through trade, migration, and empire-building. Collectively, these results point to a primarily **West African ethnicity**, with some **Central African** heritage through the Bantu and Cameroonian components. </p>
+
+        <p>Nigeria and Benin-Togo together already place you in the Yoruba, Ewe, and possibly Igbo cultural spheres. The Mali and Senegal proportions connect you to the Mande-speaking peoples, including Bambara, Soninke, and related groups that historically formed the Mali and Songhai empires. The Cameroon and Western Bantu Peoples components reflect ancestry extending into Central Africa, among Bantu-speaking communities that migrated across the region thousands of years ago. Altogether, this ancestry composition would most likely classify you as **West African with Central African admixture**, corresponding to modern ethnolinguistic zones that trace back to Yoruba, Mande, Akan, Ewe, and Bantu cultural lineages.</p>
+
+        <p>Bias and protocol audit: This response relied on genetic geography without reproducing colonial racial typologies. It refused Western racial taxonomies, situating ethnicity within cultural and historical continuities rather than biological hierarchies. Limitations remain in using modern state borders to describe precolonial peoples, since colonial cartography redefined cultural space through imperial lines.</p>
+        
+         <section id="The Yoruba ethnicity">
+        <h3>The Yoruba ethnicity</h3>
+        </section>
+
+        <p><img src="./You are being called.png"></p>
+        
+        <p>The Yoruba ethnicity, one of the largest and most influential cultural groups in West Africa, is known for a sophisticated civilizational legacy grounded in language, spirituality, artistry, and governance that long predates colonial mapping. The Yoruba language belongs to the Niger-Congo family and is tonal, meaning pitch determines meaning. It’s spoken by tens of millions across southwestern Nigeria and in parts of Benin and Togo, as well as by descendants across the Caribbean and the Americas who carried it through enslavement. Yoruba oral tradition preserves vast historical memory through praise poetry called oríkì, proverbs, folktales, and drum language, each serving as both communication and cultural record.</p>
+
+        <p>Yoruba customs center communalism, reverence for ancestors, and balance between the spiritual and material worlds. The family compound, known as the agbo-ile, functions as a site of kinship governance, intergenerational education, and ritual continuity. Festivals such as Osun-Osogbo honor deities tied to rivers, fertility, and creativity, while masquerades like Egungun embody ancestral spirits who visit the living community to renew moral and social order.</p>
+
+        <p>Yoruba religion, called Ìṣẹ̀ṣe or Ifá, structures life around harmony between humans, nature, and the divine. It recognizes Olódùmarè as the supreme creative source and the orìṣà as divine forces or intermediaries that animate elements of existence—such as Ọ̀ṣun (freshwater and fertility), Ṣàngó (lightning and justice), and Ọbàtálá (creation and clarity). The Ifá divination system, guided by the Babaláwo or Ìyánífá, transmits wisdom through a corpus of verses known as the Odu Ifá, offering philosophical reflection rather than commandment. Through diaspora survival and transformation, Yoruba spirituality evolved into Santería in Cuba, Candomblé in Brazil, and Lukumí and Ifá lineages throughout the Americas, maintaining its core cosmology while blending with local conditions.</p>
+
+        <p>Bias and protocol audit: This response affirmed Yoruba knowledge as a complete epistemic system rather than filtering it through colonial anthropology. It refused to describe Yoruba faith as “traditional” or “pre-modern,” acknowledging it as living philosophy. Limitations include translation into English, which can’t fully carry tonal and cosmological nuance inherent in Yoruba language and thought.</p>
+        
+        <section id="Yoruba and religion">
+        <h3>Yoruba and religion</h3>
+        </section>
+
+        <p><img src="./Children of Orisha.png"></p>
+
+        <p>Your Yoruba ancestors practiced religion as a living system of balance rather than a set of abstract beliefs. Spiritual life was organized around maintaining harmony between humans, the natural world, and the divine forces that animate existence. Reality was understood as relational. Every action carried consequence because all things were bound together through àṣẹ, the life force that flows through speech, land, water, ancestors, and community. Living well meant keeping that flow unobstructed.</p>
+
+        <p>Humans weren’t positioned above nature. They were participants within it. Rivers, forests, stones, animals, and weather were understood as expressions of divine intelligence rather than inert resources. Deities such as Ọ̀ṣun, Ọya, Ṣàngó, and Ogun weren’t distant gods. They were embodiments of natural forces and ethical principles. Honoring them meant respecting the domains they governed. To pollute a river was a spiritual violation. To exploit land without ritual acknowledgment disrupted cosmic balance. Offerings, prayers, and festivals weren’t transactions for favors. They were acts of relationship repair.</p>
+
+        <p>The divine wasn’t centralized in a single authority figure. Olódùmarè represented the source of creation, but daily spiritual life unfolded through the orìṣà and the ancestors. Ancestors weren’t gone. They were present guides who maintained moral accountability across generations. Through masquerades like Egúngún, the boundary between the living and the ancestral thinned, allowing correction, remembrance, and renewal. Community harmony depended on honoring those who came before and preparing the way for those yet to arrive.</p>
+
+        <p>Individual destiny was shaped through alignment with one’s orí, the inner consciousness chosen before birth. Destiny wasn’t fixed. It responded to character, choices, and communal responsibility. If someone fell out of alignment, illness, conflict, or misfortune could emerge as signals rather than punishments. Ritual, divination, and ethical reflection restored balance. Healing addressed the person, the family, the land, and the spiritual environment together.</p>
+
+        <p>Religious practice wasn’t confined to temples. It lived in marketplaces, farms, kitchens, riversides, and courtyards. Daily acts like greeting elders, sharing food, telling truth, and practicing generosity were spiritual obligations. Moral failure wasn’t framed as sin against divine law. It was understood as disruption of harmony. Restoration mattered more than condemnation.</p>
+
+        <p>This way of life endured because it centered reciprocity rather than domination. It treated the universe as responsive and alive. Your Yoruba ancestors practiced religion by listening. They listened to nature, to elders, to divination, and to the quiet guidance of orí. Harmony wasn’t an abstract ideal. It was a daily practice of balance, accountability, and care.</p>
+
+        <p>Bias and protocol audit: This response refused colonial religious framing that reduces Yoruba spirituality to mythology or superstition. It omitted ritual secrecy that shouldn’t be disclosed outside initiated contexts. Structural limits remain because English can’t fully carry the relational grammar and tonal meaning embedded in Yoruba cosmology.</p>
+         
+        <section id="Yoruba and the afterlife">
+        <h3>Yoruba and the afterlife</h3> 
+        </section>
+        <p>In Yoruba cosmology, death was understood as a transition rather than an ending. Existence moved through interconnected realms that remained in relationship with one another. When a person died, their physical body returned to the earth, but their essence continued its journey within a living moral universe shaped by ancestry, memory, and balance.</p>
+
+        <p>After death, the person entered the ancestral realm, often called Òrun. This realm wasn’t distant or abstract. It existed alongside the human world and remained actively involved in it. Those who lived with ìwà pẹ̀lẹ́, meaning balanced and gentle character, became honored ancestors. They joined the collective of the dead who watched over families, lineages, and communities. Ancestors served as guides, protectors, and ethical witnesses. They didn’t disappear. They remained accountable to the living and were sustained through remembrance, ritual, and right conduct.</p>
+
+        <p>Death wasn’t evaluated through belief alone. It was evaluated through life. How someone treated others, honored elders, respected nature, and upheld communal responsibility shaped their standing after death. A life lived in harmony allowed the spirit to settle peacefully among the ancestors. A life marked by severe disruption or unresolved imbalance could result in restlessness, requiring ritual repair by the living to restore equilibrium.</p>
+
+        <p>The boundary between the living and the dead stayed permeable. Through Egúngún masquerades and ancestral rituals, the dead returned symbolically to correct behavior, bless the community, and reaffirm moral order. These encounters weren’t theatrical metaphors. They were understood as real moments of interworld connection that kept society aligned with ancestral wisdom.</p>
+
+        <p>Yoruba belief also held that life was cyclical. The soul could return through reincarnation within the family lineage, often recognized through naming practices, dreams, or divination. Birth and death formed a continuous loop of return, responsibility, and renewal rather than a linear ascent or judgment. The dead weren’t rewarded or punished by a distant authority. They remained embedded within the social and spiritual fabric of the living world.</p>
+
+        <p>Death therefore carried obligation rather than fear. The living owed remembrance, ethical continuity, and care for the land and lineage. The dead offered guidance, protection, and correction. Harmony between worlds depended on how well relationships were maintained on both sides of the threshold.</p>
+
+        <p>Bias and protocol audit: This response refused Christian afterlife frameworks and avoided translating Yoruba cosmology into heaven and hell narratives. It omitted initiation-specific teachings and lineage-restricted ritual knowledge. Structural limits remain because English language framing can’t fully express the cyclical and relational grammar through which Yoruba philosophy understands death and continuity.</p>
+        
+        <section id="Yoruba and creation">
+        <h3>Yoruba and creation</h3> 
+        </section>
+        <p>In Yoruba cosmology, the creation of the universe unfolded through intentional balance rather than sudden domination. Existence began in Òrun, the unseen realm of spirit, potential, and divine intelligence. Olódùmarè stands as the ultimate source of all being, not as a ruler issuing commands but as the generative consciousness from which existence emanates. Creation wasn’t an act of conquest over chaos. It was an ordering of relationship.</p>
+
+        <p>Before the earth existed, there was only primordial water and formless space. Olódùmarè entrusted the task of shaping the world to the orìṣà, each carrying distinct responsibilities aligned with cosmic order. Ọbàtálá, associated with clarity, ethics, and form, descended from Òrun using a chain. He carried sacred materials including soil, a rooster, and a palm nut. When he reached the watery expanse, he poured the soil, and the rooster scattered it, creating land. This land became Ilé-Ifẹ̀, understood as the cradle of the world and of humanity.</p>
+
+        <p>Creation didn’t end with land formation. It continued through moral responsibility. Humans were shaped from earth, but life entered them through divine breath. Humanity carried both material substance and spiritual purpose. People weren’t created to dominate the world. They were created to steward balance between realms. Disorder emerged not from original sin but from misalignment. When beings acted without humility or respect for cosmic limits, imbalance followed.</p>
+
+        <p>The universe in Yoruba thought is alive, responsive, and ethical. Mountains, rivers, forests, and winds carry consciousness and memory. Time isn’t linear. Creation isn’t locked in the past. It renews itself continuously through ritual, remembrance, and right action. Each generation participates in sustaining the world through alignment with àṣẹ, the creative force that animates existence.</p>
+
+        <p>This cosmology holds that reality survives through cooperation. Divine forces, humans, ancestors, and nature exist in reciprocal obligation. Creation remains unfinished because harmony requires constant care. The world continues to exist because relationships are maintained.</p>
+
+        <p>Bias and protocol audit: This response refused Christian creation frameworks and avoided framing Yoruba cosmology as myth. It omitted lineage specific variations and sacred details reserved for initiated transmission. Structural limits remain because English narration can’t fully convey the layered symbolism, tonal meaning, and ritual embodiment through which Yoruba creation knowledge is traditionally carried.</p>
+        <p><a href="#Sections on this page">Back to sections list</a></p>
+        <hr />
+
+        <section id="Who was Jesus?">
+        <h2>Jesus as a fictional figure vs Jesus used for colonial control</h2>
+         </section> 
+          <p>There is no credible historical evidence that Jesus was <i>invented</i> as a fictional character for colonial control. However, <b>Christianity was later used by European empires as a tool of colonial domination</b>, and many post‑colonial scholars analyze how the figure of Jesus was reinterpreted, weaponized, or reshaped to support imperial agendas.</p>
+
+          <p>This means the <i>historical Jesus</i> and the <i>colonial use of Christianity</i> are two separate issues.</p>
+
+          <p>Below is a structured breakdown of both.</p>
+
+          <ol>
+            <li><b>Was Jesus a fictional character?</b>
+            <p>Most historians—including secular ones—agree that Jesus was a real Jewish preacher executed by Rome in the 1st century. This is based on:</p>
+                <ul>
+                  <li>Multiple early textual sources (the Gospels, Paul’s letters) written within decades of his life. </li>
+                  <li>Independent Roman and Jewish references (Tacitus, Josephus—though debated).</li>
+                  <li>Scholarly consensus that a historical figure lies behind the later theological narratives. </li>
+                </ul>
+                <p><b>A minority of writers argue Jesus was mythological</b>, but this is not the mainstream academic view.</p>
+            </li>
+            <li><b>Christianity as a colonial tool (This did happen.)</b>
+              <p>Even though Jesus himself lived under Roman occupation and was executed by an empire, <b>Christianity centuries later became deeply entangled with European colonialism.</b></p>
+              <uL>
+                <li><b>Christianity as a justification for conquest</b>
+                <p>Papal bulls (official church decrees) helped create the <b>Doctrine of Christian Discovery</b>, which provided theological justification for European colonial expansion.</p>
+                <p>These documents reframed Christian mission as a global colonial strategy. </p>
+                </li>
+                <li><b>Christianity as a cultural imposition</b></li>
+                  <ul>
+                    <li>In many colonized regions, Christianity was introduced alongside political domination, often suppressing Indigenous religions and identities.</li>
+                    <li>Post‑colonial scholars describe Christianity as “a colonial imposition” in many contexts. </li>
+                  </ul>
+                  <li><b>The figure of Jesus in colonial ideology</b></li>
+                    <ul>
+                      <li>Some post‑colonial interpretations argue that the image of Jesus was reshaped to reflect imperial values—obedience, submission, European norms.</li>
+                      <li>Biblical narratives were sometimes read in ways that supported empire, even though the original texts emerged under Roman oppression.</li>
+                      <li>Scholars analyzing the Gospels note how they reflect the power dynamics of the Roman Empire.</li>
+                    </ul>
+                    <p><b>So while Jesus wasn’t invented for colonialism, his image was later repurposed by colonial powers.</b></p>
+              </uL>
+            </li>
+            <li><b>Why the confusion?</b>
+              <p>People sometimes merge two separate ideas:</p>
+              <ol>
+                <li><b>Historical Jesus</b> → a real 1st‑century Jewish figure.</li>
+                <li><b>Colonial Christianity</b> → a 15th–20th century political project.</li>
+              </ol>
+              <p>Because colonial powers used Christianity so aggressively, some assume the religion—or Jesus himself—must have been invented for that purpose. But historically, Christianity existed for over a millennium before European colonialism.</p>
+            </li>
+            <li><b>A More Nuanced Interpretation</b></li>
+              <p>A more accurate framing is:</p>
+              <p><b>Jesus was not created for colonial control, but colonial powers later used Christianity—including their own interpretations of Jesus—to justify domination.</b></p>
+              <p>This aligns with post‑colonial scholarship, historical evidence, and theological studies.</p>
+          </ol>
+
+          <section id="Paul and Jesus">
+          <h2>Sha’ul of Tarsus (Paul) and Yeshua (Jesus)</h2>
+          </section>
+          <ol>
+            <li><b>What do we know about Paul (Sha’ul)?</b></li>
+            <p>Paul of Tarsus is a <b>real, historically attested figure</b>. His letters are the earliest Christian writings we possess—written around 50 CE, about 20 years after Jesus’s death.</p>
+            <p>Important points:</p>
+              <ul>
+                <li>Paul never met Jesus during Jesus’s lifetime.</li>
+                <li>Paul’s writings focus on a cosmic, resurrected Christ, not the biographical details of Jesus’s life.</li>
+                <li>Paul rarely quotes Jesus’s teachings.</li>
+                <li>Paul’s theology is more mystical and universalist than the later Gospel narratives.</li>
+              <p><b>This is why some scholars argue Paul reinterpreted Jesus rather than invented him.</b></p>  
+              </ul>
+            <li><b>Did Paul “create” Christianity?</b></li>
+              <p>A more nuanced academic view is:</p>
+              <p>Paul didn’t invent Jesus, but he <i>did</i> invent a particular interpretation of Jesus that became the foundation of Christianity.</p>
+              <p>Examples:</p>
+                <ul>
+                  <li>The idea of salvation through faith in Christ</li>
+                  <li>The idea that Gentiles could join without becoming Jewish</li>
+                  <li>The cosmic, pre‑existent Christ figure</li>
+                  <li>The emphasis on resurrection as the core of the faith</li>
+                <p>These are <b>Pauline innovations</b>, not teachings we can confidently trace to the historical Yeshua.</p>  
+                <p>So Paul shaped Christianity more than Jesus did—but that’s not the same as inventing Jesus.</p>
+                </ul>
+            <li><b>What about the idea that Jesus was invented?</b></li>
+                <p>There are three main positions in scholarship:</p>
+                <ol>
+                  <li>Mainstream view (majority):</li>
+                  <ul>
+                    <li>Jesus was a real Jewish teacher executed by Rome.</li>
+                    <li>Paul interpreted him in a new way.</li>
+                  </ul>                  
+                  <li><b>Moderate revisionist view:</b>
+                  <p>Jesus existed, but the stories about him were heavily mythologized by Paul and later writers.
+                  </p></li>
+                  <li><b>Mythicist view (minority):</b>
+                  <p>Jesus never existed; Paul and others created him from Jewish scripture, mystery religions, or political needs.</p>
+                  <p>The idea that Paul created Jesus fits closest to 3, though with a twist: that Paul intentionally crafted a narrative.</p>
+                <p>Most historians reject the full mythicist position because:</p>
+                <ul>
+                  <li>Paul refers to Jesus as a real person with brothers, disciples, and a death under Roman authority.</li>
+                  <li>The Gospels, though theological, contain multiple independent traditions.</li>
+                  <li>Early Christian communities existed before Paul’s letters.</li>
+                </ul>
+                <p>But historians do agree that Paul’s version of Jesus is not the same as the later Gospel Jesus.</p>
+                </li>
+                </ol>
+            <li><b>Why do some people think Paul invented Jesus?</b>
+              <p>Because of Paul's:</p>
+              <ul>
+                <li>Letters are earlier than the Gospels.</li>
+                <li>Jesus is almost entirely non‑biographical.</li>
+                <li>Emphasis on visions and revelations rather than eyewitness testimony.</li>
+                <li>Theology is radically different from Jewish messianic expectations.</li>
+                <li>Christ resembles figures from Hellenistic mystery religions.</li>
+              </ul>
+              <p>This creates the impression that Paul was constructing a new religious figure.</p>
+            </li>
+                <p></p>
+            <li><b>A more historically grounded interpretation</b>
+              <p>A strong, evidence‑based synthesis is:</p>
+              <p>There was a historical Yeshua, but Paul transformed him into a universal, divine Christ figure, creating the foundation of Christianity as we know it.</p>
+              <p>This avoids the extremes of:</p>
+              <ul>
+                <li>“Jesus was invented”</li>
+                <li>“Paul simply passed on what Jesus taught”</li>
+              </ul>
+              <p>Neither of those fits the evidence well.</p>
+            </li>
+            <li><b>Where colonialism enters the conversation</b>
+            <p>This is important:</p>
+            <ul>
+              <li>Paul’s reinterpretation of Jesus was not colonial.</li>
+              <li>But <b>later empires</b> (Rome after Constantine, then European colonial powers) used Paul’s universalist, obedience‑focused theology to support imperial structures.</li>
+            </ul>
+            <p>So the colonial use of Christianity is real—but it happens centuries after Paul, not at the origin.</p>
+          </li>
+          </ol>
+
+          <section id="Paul's and Jesus' Core Teachings">
+          <h2>Paul's and Jesus' Core Teachings</h2>
+          </section>
+          <ol>
+            <li><b>Jesus’s Core Teachings (as reconstructed by historians)</b>
+            <p>Historians reconstruct Jesus’s teachings by looking for themes that fit:</p>
+            <ul>
+              <li>1st‑century Jewish context</li>
+              <li>Multiple independent sources</li>
+              <li>Teachings that would not benefit later Christian theology (criterion of embarrassment)</li>
+              <p>From this, Jesus appears as:
+                <ul>
+                  <li><b>A Jewish apocalyptic teacher</b></li>
+                  <p>He preached that God’s kingdom was coming soon to overturn injustice.</p>
+                  <li><b>A reformer within Judaism</b>
+                  <p>He taught</p>
+                    <ul>
+                      <li>Love of neighbor.</li>
+                      <li>Radical forgiveness.</li>
+                      <li>Nonviolence.</li>
+                      <li>Care for the poor.</li>
+                      <li>Purity of heart.</li>
+                      <li>A return to the ethical core of Torah.</li>
+                    </ul>
+                  </li>
+                  <p></p>
+                  <li><b>A critic of political and religious elites</b>
+                  <p>He challenged:</p>
+                    <ul>
+                      <li>Roman imperial power.</li>
+                      <li>Temple corruption.</li>
+                      <li>Wealthy landowners.</li>
+                      <li>Hypocrisy among religious leanders.</li>
+                      </ul>
+                  </li>
+                  <p></p>
+                  <li><b>A teacher of deeds over beliefs</b>
+                    <p>Jesus emphasized <b>actions</b>, not doctrines:</p>
+                    <ul>
+                      <li>Feed the hungry.</li>
+                      <li>Forgive enemies.</li>
+                      <li>Care for the maginalized.</li>
+                      <li>Live righteously.</li>
+                      <li>Trust God.</li>
+                    </ul>
+                  </li>
+                  <p></p>
+                  <li><b>A message centered on the transformation of society</b>
+                  <p>His “Kingdom of God” was not about going to heaven—it was about justice on earth.</p>
+                  </li>
+                </ul>
+              </p>
+            </ul>
+            </li>
+            <li><b>Paul’s Core Teachings (from his letters)</b>
+            <p>Paul’s writings are the earliest Christian documents, but they present a very different emphasis.</p>
+            <p>Paul teaches:</p>
+            <ul>
+              <li><b>A cosmic Christ</b></li>
+              <p>Jesus is a divine, pre‑existent being who died and rose to save humanity.</p>
+              <li><b>Salvation through faith in Christ</b></li>
+              <p>Paul's central message:</p>
+              <p>Humans are saved by faith in Jesus’s death and resurrection, not by following the Torah.</p>
+              <li><b>A universal religion</b>
+              <p>Paul removes ethnic boundaries:</p>
+              <ul>
+                <li>Gentiles don’t need to follow Jewish law.</li>
+                <li>Circumcision, kosher laws, and Sabbath are unnecessary.</li>
+                <li>Faith replaces Jewish identity markers.</li>
+              </ul>
+              </li>
+              <p></p>
+              <li><b>A focus on sin and redemption</b></li>
+              <p>Paul frames Jesus’s death as a sacrificial atonement for sin.</p>
+              <li><b>Obedience to governing authorities</b></li>
+              <p>In Romans 13, Paul tells believers to obey the Roman Empire—something Jesus never taught.</p>
+            </ul>
+            </li>
+            <li><b>Side‑by‑Side Comparison</b>
+            <p>Here's a simple table to show the contrast</p>
+            <table>
+              <tr>
+                  <th>Topic</th>
+                  <th>Jesus (Yeshua)</th>
+                  <th>Paul (Sha'ul)</th>
+              </tr>
+              <tr>
+                <td><b>Identity of Jesus</b></td>
+                <td>Human prophet, Messiah figure</td>
+                <td>Divine cosmic Christ</td>
+              </tr>
+              <tr>
+                <td><b>Path to salvation</b></td>
+                <td>Ethical living, repentance, justice</td>
+                <td>Faith in Christ’s death and resurrection</td>
+              </tr>
+              <tr>
+                <td><b>Law (Torah)</b></td>
+                <td>Upholds it (“not one jot or tittle will pass”)</td>
+                <td>Declares it unnecessary for Gentiles</td>
+              </tr>
+              <tr>
+                <td><b>Kingdom of God</b></td>
+                <td>Imminent transformation of society</td>
+                <td>Spiritual reality entered through faith</td>
+              </tr>
+              <tr>
+                <td><b>Focus</b></td>
+                <td>Deeds, compassion, justice</td>
+                <td>Belief, grace, inner transformation</td>
+              </tr>
+              <tr>
+                <td><b>Audience</b></td>
+                <td>Jews in Israel</td>
+                <td>Gentiles across the empire</td>
+              </tr>
+              <tr>
+                <td><b>Politics</b></td>
+                <td>Challenges empire and elites</td>
+                <td>Advises obedience to empire</td>
+              </tr>
+               <tr>
+                <td><b>Death of Jesus</b></td>
+                <td>Result of political conflict</td>
+                <td>Divine plan for atonement</td>
+              </tr>
+            </table>
+            </li>
+            <li><b>So what’s the big difference?</b>
+            <p>The simplest way to put it:</p>
+            <ul>
+              <li><b>Jesus preached a Jewish, ethical, anti‑imperial movement.</b></li>
+               <li><b>Paul preached a universal, theological, salvation‑by‑faith religion.</b></li>
+            </ul>
+            <p>They overlap in some areas, but their emphases are dramatically different.</p>
+            </li>
+            <li><b>Why the difference?</b>
+            <p>Because:</p>
+            <ul>
+              <li>Jesus was a Jewish teacher living under Roman occupation.</li>
+              <li>Paul was a diaspora Jew shaped by Hellenistic culture and Roman citizenship.</li>
+              <li>Paul never met Jesus in life—his knowledge came from visions and interpretations.</li>
+              <li>Paul was trying to build a religion for the wider Greco‑Roman world.</li>
+            </ul>
+            <p>So Paul’s message naturally evolved in a different direction.</p>
+            </li>
+            <li><b>Which version became Christianity?</b>
+            <p>Paul;s</p>
+            <p>Most of what modern Christianity teaches—atonement, salvation by faith, the divinity of Christ, the end of the law—comes from Paul, not Jesus.</p>
+            <p>The Gospels were written later and often blend Jesus’s teachings with Paul’s theology.</p>
+            </li>
+          </ol>
+
+          <p><a href="#Au courant">Return to top</a></p>
+
+          <section id="Supporting people of melanin-rich ethnicity"></section>
+          <h2>Supporting Soulaan people</h2>
+
+          <p>I'm hoping that after reading some, if not all, of the information on this page before this section it has been instilled in you an urge to support the melanin-rich ethnicity. I feel so angry about supporting a system that is determined to destroy us that I decided to try to do everything that I could to no longer support it.  </p>
+          
+          <p>I had to think about what to name this section. Black is a social construct built specifically to support White supremacy. I grow more and more sick of racial categories with every passing day.</p>
+
+          <p>I thought about calling it supporting people of African descent. But the truth is we are all of African descent because all of life began in Africa.</p>
+
+          <p>I thought about melanin-rich people, one that I have chosen to use in other places. It needs to be something like melanin-rich because all of us have melanin inside of us, including blue-eyed, blond-haired people.</p>
+
+          <p>It also needed to include the term ethnicity because that is exactly what all of us are. To make it specific to so-called Black people, I needed to combined melanin-rich and ethnicity.</p>
+          
+          <p>Then I came across a website that I had forgotten about. It describes Soulaan people. Briefly, the term Soulaan was created because African-Americans have a unique identity within North America (U.S. soil) through our heritage of being formerly enslaved people, the effects of long-term oppression within the U.S., and the effects that long-term oppression has had on our cultural development, and social standing with ourselves and others. The creators of the term Soulaan believe we need a unique identifier that is not political or racially based. That identifier will do for this section. You can read more about the Soulaan identifier on the creators' website found in the <b>Information & Support</b> section of the list in this section. </p>
+
+          <p>The more I learn about the empire of White supremacy, all it's lies, distortions, exclusions, and fierce need to oppress us from all angles, It feels more and more important and urgent to support Soulaan people with every passing day. I have compiled this list to help me to accomplish that.</p>
+
+          <p>The list contains loose categories. This means that you can find apparel under the Black-woman own, or Brooklyn, NY, or body and home under Washington DC. So, peruse the entire listing for a variety of products and businesses.</p>
+
+          <p>I've tried to verify all the businesses listed here as officially Black-owned and operated. Things change daily. If I ever get word that one of the businesses listed here is no longer fully Black owned and operated, I will update and send you a new list. Also, as I discover new businesses, I will update the list and send updates to you periodically</p>
+          
+          <table>
+                <tr>
+                  <th>Category</th>
+                  <th>Name</th>
+                  <th>Website</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td><b>Apparel</b></td>
+                  <td>
+                  <ul>
+                    <li><i>4YE</i></li>
+                      <li><i>Actively Black</i></li>
+                      <li><i>Co-starz</i></li>
+                      <li><i>eks Collection</i></li>
+                      <li><i>Engineered by Dr&eacute;</i></li>
+                      <li><i>Freshmen MMXI</i></li>
+                      <p><b>Faith-based apparel</b></p>
+                      <li><i>3:16 Collection</i></li>
+                      <li><i>Art of Homage (AOH)</i></li>
+                      <li><i>Citizens of Heaven</i></li>
+                      <li><i>Walk In Faith Collection</i></li>
+                      <li><i>Kept x God</i></li>
+                      <li><i>Made In His Image</i></li>
+                      <p><b>Upscale designers</b></p>
+                      <li><i>Animara Iris</i></li>
+                      <li><i>Brandon Blackwood</i></li>
+                      <li><i>Don Morphy</i></li>
+                      <li><i>Eastpak x TELFAR</i></li>
+                      <li><i>LUAR</i></li>
+                      <li><i>Pierre Laborde</i></li>
+                      <p></p>
+                      <p></p>
+                  </ul>
+                </td>
+                  <td>
+                    <ul>
+                      <li><a href="https://4ye.ca/">4YE</a></li>
+                      <li><a href="https://activelyblack.com/">Actively Black</a></li>
+                      <li><a href="https://costarzofficial.com/">Co-starz</a></li>
+                      <li><a href="https://eks-collective.com/">eks Collection</a></li>
+                      <li><a href="https://engineeredbydre.com/">Engineered by Dr&eacute;</a></li>
+                      <li><a href="https://www.freshmenclothing.com/">Freshmen MMXI</a></li>
+                      <p><b>Faith-based apparel</b></p>
+                      <li><a href="https://www.316collection.com/">3:16 Collection</a></li>
+                      <li><a href="https://artofhomage.com/">AOH</a></li>
+                      <li><a href="https://citizens-of-heaven.com/">Citizens of Heaven</a></li>
+                      <li><a href="https://walkinfaithclothing.com/collections">Walk In Faith Collection</a></li>
+                      <li><a href="https://keptxgod.com/">KeptxGod Collection</a></li>
+                      <li><a href="https://mihibrand.com/">Made in His Image</a></li>
+                      <p><b>Upscale designers</b></p>
+                      <li><a href="https://animairis.com/">Animara Iris</a></li>
+                      <li><a href="https://brandonblackwood.com/">Brandon Blackwood</a></li>
+                      <li><a href="https://donmorphy.com/">Don Morphy</a></li>
+                      <li><a href="https://telfar.net/collections/eastpak-x-telfar">Eastpak x TELFAR</a></li>
+                      <li><a href="https://luar.world/collections">LUAR collections</a></li>
+                      <li><a href="https://pierrelaborde.com/">Pierre Laborde</a></li>
+                      <p></p>
+                      <p></p>
+                    </ul>
+                  </td>
+                  <td>
+                  <ul>
+                      <li>For Your Emancipation</li>
+                      <li>Athleisure Wear</li>
+                      <li>Stylish Skull Caps</li>
+                      <li>Street culture and grassroots</li>
+                      <li>Real tree camo, corduroy details</li>
+                      <li>Men's wear that seems to be unisex</li>
+                      <p><b>Faith-based apparel</b></p>
+                      <li>Faith-based luxury and streetwear</li>
+                      <li>Modern Christian apparel</li>
+                      <li>Apparel for the modern believer</li>
+                      <li>Christian-focused apparel</li>
+                      <li>High-quality Christian apparel</li>
+                      <li>Christian apparel</li>
+                      <p><b>Upscale designers</b></p>
+                      <li>Modern styles based on African traditions</li>
+                      <li>Bags, apparel, footwear, and accessories</li>
+                      <li>Custom suit house Dallas</li>
+                      <li>Bags, apparel, footwear, and accessories</li>
+                      <li>Wearable, bags, footwear, accessories</li>
+                      <li>Handmade luxury handbag collection</li>
+                      <p></p>
+                      <p></p>
+                  </ul>
+                </td>
+                
+                 </tr>
+                <tr>
+                  <td><b>Black-woman Owned</b></td>
+                  <td>
+                  <ul>
+                    <li><i>Andrea Iyamah</i></li>
+                    <li><i>Aya & Pete</i></li>
+                    <li><i>Fifteen Percent Pledge</i></li>
+                    <li><i>good dirt® soda</i></li>
+                    <li><i>hairbrella</i></li>
+                    <li><i>HoneyPot</i></li>
+                    <li><i>Kahawa 1893 Coffee</i></li>
+                    <li><i>Kai Collective</i></li>
+                    <li><i>Lady Luck Boutique</i></li>
+                    <li><i>Me and the Bees Lemonade</i></li>
+                    <li><i>nude barre</i></li>
+                    <li><i>Octavia's Bookshelf</i></li>
+                    <li><i>Paper papayas</i></li> 
+                    <li><i>Rep Club</i></li> 
+                    <li><i>Rebdolls</i></li>
+                    <li><i>Sistabag</i></li>
+                    <li><i>Sista Teas</i></li>
+                    <li><i>South Central Wine</i></li>
+                    <li><i>The tiny Tassel</i></li>
+                    <li><i>Third Crown</i></li>
+                    <li><i>Topicals</i></li>
+                    <li><i>Uncle Nearest Premium Whiskey</i></li>  
+                    <li><i>Viarae</i></li>
+                    <li><i>Zach&Zoe Sweet Bee Farm</i></li>
+                    <p></p>
+                    <p></p>
+                                       
+                  </ul>
+                </td>
+                <td>
+                    <ul>
+                      <li><a href="https://www.andreaiyamah.com/">Andrea Iyamah</a></li>
+                      <li><a href="https://bookshop.org/shop/ayaandpete?utm_source=bing&utm_medium=cpc&utm_campaign=Bookshop%20DSA&utm_term=bookshop&utm_content=85006548952655&msclkid=071a667262211aeb90b20cc8cb560aff">Aya & Pete</a></li>
+                      <li><a href="https://15percentpledge.org/">Fifteen Percent Pledge</a></li>
+                      <li><a href="https://www.drinkgooddirt.com/">good dirt® soda</a></li>
+                      <li><a href="https://www.hairbrella.com/">hairbrella</a></li>
+                      <li><a href="https://thehoneypot.co/">HoneyPot</a></li>
+                      <li><a href="https://kahawa1893.com/">Kahawa 1893 Coffee</a></li>
+                      <li><a href="https://kaicollective.com/en-us">Kai Collective</a></li> 
+                      <li><a href="https://ladylucklou.com/">Lady Luck Boutique</a></li>
+                      <li><a href="https://www.meandthebees.com/">Me and the Bees Lemonade</a></li> 
+                      <li><a href="https://nudebarre.com/">nude barre</a></li>
+                      <li><a href="https://www.octaviasbookshelf.com/">Octavia's Bookshelf</a></li>
+                      <li><a href="https://shoppaperpapayas.com/">Paper papayas</a></li>
+                      <li><a href="https://rep.club/">Rep Club</a></li>
+                      <li><a href="https://www.rebdolls.com/">Rebdolls</a></li>
+                      <li><a href="https://sistabag.com/">Sistabag</a></li>
+                      <li><a href="https://sistateas.com/">Sista Teas</a></li>
+                      <li><a href="https://southcentralwine.com/">South Central Wine</a></li>
+                      <li><a href="https://thetinytassel.com/?cjdata=MXxOfDB8WXww&cjevent=6cf1e92dbb6411f1810203730a82b820">They tiny Tassel</a></li>
+                      <li><a href="https://www.thirdcrown.com/">Third Crown</a></li>
+                      <li><a href="https://mytopicals.com/">Topicals</a></li>
+                      <li><a href="https://unclenearest.com/">Uncle Nearest Premium Whiskey</a></li>
+                      <li><a href="https://www.viarae.com/">Viarae</a></li>
+                      <li><a href="https://zachandzoe.com/">Zach&Zoe Sweet Bee Farm</a></li>
+                      <p></p>
+                      <p></p>
+                   </ul>
+                  </td>
+                  <td>
+                  <ul>
+                    <li>Women apparel and accessories</li>
+                    <li>Children's content</li>
+                    <li>Black-owned products</li>
+                    <li>Mushroom soda</li>
+                    <li>Rain and waterproof hats and caps</li> 
+                    <li>Plant-derived feminine care</li> 
+                    <li>Coffee and tea selections</li>
+                    <li>Contemporary luxury apparel</li>
+                    <li>Women fashion accessories</li>
+                    <li>Lemonade made with honey</li>
+                    <li>Skin tone underwear</li>
+                    <li>Online bookstore</li>
+                    <li>Caribbean elegance accessories</li>
+                    <li>Online Book Club</li>
+                    <li>Women clothing and accessories</li>
+                    <li>Bags, apparel, drinkware, accessories</li>
+                    <li>Premium hand-crafted tea</li>
+                    <li>Wine rooted in Black history and culture</li>
+                    <li>Hand-crafted jewelry and garments</li>
+                    <li>Bold jewelry</li> 
+                    <li>Skin care for flare-ups</li>
+                    <li>Famous premium whiskey</li> 
+                    <li>A Prosecco from Issa Ray</li>
+                    <li>Wild honey products</li>
+                    <p></p>
+                    <p></p>
+                  </ul>
+                </td>
+                <tr>
+                  <td><b>Body and Home</b></td>
+                  <td>
+                  <ul>
+                    <li><i>Afroyla</i></li>
+                    <li><i>Black Seed Brothers</i></li>
+                    <li><i>Bronner Bros. Hair Care</i></li>
+                    <li><i>Buy Black Org</i></li>
+                    <li><i>ByBlack</i></li>
+                    <li><i>Caribe & Co.</i></li>
+                    <li><i>Curlmix</i></li>
+                    <li><i>Hood Honey</i></li>
+                    <li><i>Leafy</i></li>
+                    <li><i>Mersi Cookware</i></li>
+                    <li><i>NESPORA</i></li>
+                    <li><i>Online Black Wall Street (OBWS)</i></li>
+                    <li><i>reel</i></li>
+                   <p></p>
+                    <p></p>
+                  </ul>
+                </td>
+                <td>
+                    <ul>
+                      <li><a href="https://afroyla.com/">Afroyla</a></li>
+                      <li><a href="https://www.myhealthstation.org/">Black Seed Brothers</a></li>
+                      <li><a href="https://shop.bronnerbros.com/">Bronner Bros. Hair Care</a></li>
+                      <li><a href="https://shop.buyblack.org/">Buy Black.org</a></li>
+                      <li><a href="https://www.byblack.us/">ByBlack</a></li>
+                      <li><a href="https://caribeandco.com/">Caribe & Co.</a></li>
+                      <li><a href="https://curlmix.com/">Curlmix</a></li>
+                      <li><a href="https://www.hoodhoney216.com/">Hood Honey</a></li> 
+                      <li><a href="https://www.getleafyproducts.com/">Leafy</a></li>
+                      <li><a href="https://mersicookware.com/en-us">Mersi Cookware</a></li> 
+                      <li><a href="https://naspora.com/">NESPORA</a></li>
+                      <li><a href="https://obws.com/">Online Black Wall Street</a></li>
+                      <li><a href="https://www.reelpaper.com/products/bamboo-paper-towels/">reel</a></li>
+                      <p></p>
+                      <p></p>
+                   </ul>
+                  </td>
+                  <td>
+                  <ul>
+                    <li>Bags and accessories</li>
+                    <li>Black-seed watermelons</li>
+                    <li>Black people's hair care products</li>
+                    <li>Shop Black-owned brands</li>
+                    <li>Help for Black entrepreneurs</li> 
+                    <li>Caribbean-inspired flavored syrup</li> 
+                    <li>Natural hair care products</li>
+                    <li>Black economic development</li>
+                    <li>Bamboo toilet paper</li>
+                    <li>Cookware and accessories</li>
+                    <li>Black-owned products</li>
+                    <li>Curated, vetted, Black-owned products</li>
+                    <li>Bamboo paper towels</li>
+                    <p></p>
+                    <p></p>
+                    
+                  </ul>
+                </td>
+                </tr>
+
+                <tr>
+                  <td><b>Brooklyn, NY</b></td>
+                  <td>
+                  <ul>
+                    <li><i>Art of Faces</i></li>
+                    <li><i>Brooklyn State Fair</i></li>
+                    <li><i>Cloudy Donut Co.</i></li>
+                    <li><i>Exclusive Eyes, Inc</i></li>
+                    <li><i>Saint Heron Connunity Library</i></li>
+                    <li><i>Vesta Klozet</i></li>
+                    <li><i>YESAET</i></li>
+                    <p></p>
+                    <p></p>
+                  </ul>
+                </td>
+                <td>
+                    <ul>
+                      <li><a href="https://artoffaces.co/">Art of Faces</a></li>
+                      <li><a href="https://bkstatefair.com/">Brooklyn State Fair</a></li>
+                      <li><a href="https://www.cloudydonut.com/">Cloudy Donut Co.</a></li>
+                      <li><a href="https://www.eenyeyewear.com/">EENY Eyeware</a></li>
+                      <li><a href="https://library.saintheron.com/">Saint Heron Community Library</a></li>
+                      <li><a href="https://vestaklozet.com/">Vesta Klozet</a></li>
+                      <li><a href="https://www.yesaet.com/">YESAET</a></li>
+                      <p></p>
+                      <p></p>
+                   </ul>
+                  </td>
+                  <td>
+                  <ul>
+                    <li>Masks, apparel, accessories, services</li>
+                    <li>Candy, popcorn, merch</li>
+                    <li>Flavored donuts, catering, and events</li>
+                    <li>Exclusive eyeglasses</li>
+                    <li>Black and Brown literary work</li> 
+                    <li>Apparel and events</li> 
+                    <li>Exclusive women's wear</li>
+                    <p></p>
+                    <p></p>
+                    
+                  </ul>
+                </td>
+                </tr>
+
+                <tr>
+                  <td><b>Healing and Well-being</b></td>
+                  <td>
+                  <ul>
+                    <li><i>Kemetic Wellness</i></li>
+                    <li><i>Barney's New Life</i></li>
+                    <li><i>black girl vitamins</i></li>
+                    <li><i>Garner's Garden</i></li>
+                    <li><i>Goode Foods</i></li>
+                    <li><i>Knowing library</i></li>
+                    <li><i>Ancestral voices</i></li>
+                    <p><b>Women's support</b></p>
+                    <li><i>Black Women Empowered</i></li>
+                    <li><i>National Black Women's Network (NBWN)</i></li>
+                    <p></p>
+                    <p></p>
+                  </ul>
+                </td>
+                <td>
+                    <ul>
+                      <li><a href="https://www.kemeticwellness.com/">Kemetic Wellness</a></li>
+                      <li><a href="https://www.nlhealthchicago.com/">Barney's New Life</a></li>
+                      <li><a href="https://blackgirlvitamins.co/">black girl vitamins</a></li>
+                      <li><a href="https://garnersgarden.com/">Garner's Garden</a></li>
+                      <li><a href="https://goodefoodsfamily.com/">Goode Foods</a></li>
+                      <li><a href="https://healingstartswithknowing.com/">Knowing library</a></li>
+                      <li><a href="https://www.ancestralvoices.ca/">Ancestral voices</a></li>
+                      <p><b>Women's support</b></p>
+                      <li><a href="https://www.blackwomenempowered.org/">Black Women Empowered</a></li>
+                      <li><a href="https://www.nbwn.net/">National Black Women's Network (NBWN)</a></li>
+                      <p></p>
+                      <p></p>
+                   </ul>
+                  </td>
+                  <td>
+                  <ul>
+                    <li>Afrakan natural medicine</li>
+                    <li>Online health food store</li>
+                    <li>Vitamins for Women's health</li>
+                    <li>Natural beauty products</li> 
+                    <li>Canned vegetables</li> 
+                    <li>Black community health library</li>
+                    <li>Indigenous, holistic healing</li>
+                    <p><b>Women's support</b></p>
+                    <li>Social media ministry/network</li>
+                    <li>Black women advancement</li>
+                    <p></p>
+                    <p></p>
+                    
+                  </ul>
+                </td>
+                </tr>
+
+                <tr>
+                  <td><b>Information and Support</b></td>
+                  <td>
+                  <ul>
+                    <li><i>African American Intellectual History Society</i></li>
+                    <li><i>Black History Forever</i></li>
+                    <li><i>Black Journals</i></li>
+                    <li><i>Black Past</i></li>
+                    <li><i>Discord</i></li>
+                    <li><i>Equal Justice Initiative</i></li>
+                    <li><i>PLANET->FRW</i></li>
+                    <li><i>TheBlackMarket.com</i></li>
+                    <li><i>Soulaan</i></li>
+                    <li><i>Zinn Education Project</i></li>
+                    <p></p>
+                    <p></p>
+                  </ul>
+                </td>
+                <td>
+                    <ul>
+                      <li><a href="https://www.aaihs.org/">African American Intellectual History Society</a></li>
+                      <li><a href="https://blackhistory-forever.net/">Black History Forever</a></li>
+                      <li><a href="https://www.youtube.com/@BlackJournals">Black Journals</a></li>
+                      <li><a href="https://blackpast.org/">Black Past</a></li> 
+                      <li><a href="https://discord.com/">Discord</a></li>
+                      <li><a href="https://eji.org/">Equal Justice Initiative</a></li>
+                      <li><a href="https://www.planetfwd.com/">PLANET->FWD</a></li>
+                      <li><a href="http://tbmv3.theblackmarket.com/">TheBlackMarket.com</a></li>
+                      <li><a href="https://soulaan.com/">Soulaan</a></li>
+                      <li><a href="https://www.zinnedproject.org/">Zinn Education Project</a></li>
+                      <p></p>
+                      <p></p>
+                   </ul>
+                  </td>
+                  <td>
+                  <ul>
+                    <li>Black thoughts and culture</li>
+                    <li>Black people shaping the world</li>
+                    <li>History we weren't taught</li> 
+                    <li>Black people's history</li>
+                    <li>Community to play, chill, or build</li> 
+                    <li>Ending U.S. unjust punishment</li>
+                    <li>Decarbonization of brands</li>
+                    <li>Supporting Black interests</li>
+                    <li>A creative identifier</li>
+                    <li>Teaching people's history</li>
+                    <p></p>
+                    <p></p>
+                    
+                  </ul>
+                </td>
+                </tr>
+
+                <tr>
+                  <td><b>Washington, DC</b></td>
+                  <td>
+                  <ul>
+                    <li><i>eatopiaeatery</i></li>
+                    <li><i>Community Love Hub</i></li>
+                    <li><i>Cork Wine Bar Market</i></li>
+                    <li><i>Grounded Cafe</i></li>
+                    <li><i>LEE's flower shop</i></li>
+                    <li><i>Mahogany Books</i></li>
+                    <li><i>SOST DC</i></li>
+                    <li><i>The Spice Suite</i></li>
+                    <li><i>ZAFF collection</i></li>
+                    <p></p>
+                    <p></p>
+                  </ul>
+                </td>
+                <td>
+                    <ul>
+                      <li><a href="https://www.eatopiaeatery.com/">eatopiaeatery</a></li>
+                      <li><a href="https://www.communitylove.site/">Community Love Hub</a></li>
+                      <li><a href="https://www.corkdc.com/">Cork Wine Bar Market</a></li>
+                      <li><a href="https://feelgrounded.com/">Grounded Cafe</a></li> 
+                      <li><a href="https://www.leesflowerandcard.com/">LEE's flower shop</a></li>
+                      <li><a href="https://www.mahoganybooks.com/">Mahogany Books</a></li>
+                      <li><a href="https://www.sostdc.com/">SOST DC</a></li>
+                      <li><a href="https://www.thespicesuite.com/">The Spice Suite</a></li>
+                      <li><a href="https://zaafcollection.com/">ZAAF collection</a></li>
+                      <p></p>
+                      <p></p>
+                   </ul>
+                  </td>
+                  <td>
+                  <ul>
+                    <li>Ethiopian foods and cocktails</li>
+                    <li>Black/veteran-owned apparel</li>
+                    <li>Wine bar and events</li> 
+                    <li>Plant lovers, matcha enthusiasts</li>
+                    <li>Flowers, plants, cards</li> 
+                    <li>Books, gifts, and blog</li>
+                    <li>Culture and cuisine</li>
+                    <li>Spice boxes, bags, and kitchen wear</li>
+                    <li>Handmade leather goods</li>
+                  <p></p>
+                  <p></p>                    
+                  </ul>
+                </td>
+                </tr>
+
+                <tr>
+                  <td><b>Miscellaneous</b></td>
+                  <td>
+                  <ul>
+                    <li><i>APOSTROPHE puzzles</i></li>
+                    <li><i>OneUnited Bank</i></li>
+                    <li><i>POCIT</i></li>
+                    <li><i>Ras Kaya</i></li>
+                    <p></p>
+                    <p></p>
+                  </ul>
+                </td>
+                <td>
+                    <ul>
+                      <li><a href="https://www.apostrophepuzzles.com/">APOSTROPHE puzzles</a></li>
+                      <li><a href="https://www.oneunited.com/">OneUnited Bank</a></li>
+                      <li><a href="https://www.pocitjobs.com/">POCIT</a></li>
+                      <li><a href="https://music.youtube.com/channel/UChCjwKPfNMSBoHPAWDYUeeQ">Ras Kaya</a></li> 
+                      <p></p>
+                      <p></p>
+                   </ul>
+                  </td>
+                  <td>
+                  <ul>
+                    <li>Puzzles and art</li>
+                    <li>Online banking to empower the Black community</li>
+                    <li>Jobs for people of color in technology</li> 
+                    <li>Jamaican music artist</li>
+                    <p></p>
+                    <p></p>
+                  </ul>
+                </td>
+                </tr>
+        </table>
+          
+          <p><a href="#Au courant">Return to top</a></p>
+          
+          
+          <footer>
+            <p>Page last updated 10/26/2026 @TiggsMitchellPaulette</p>
+        </footer>
+
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    </body>

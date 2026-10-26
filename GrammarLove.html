@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+    <Head>
+        <meta charset="UTF=8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GrammarLove</title>
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+    <style>
+body {
+    background-color: tan
+}
+
+p {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: maroon;
+}
+
+
+h2 {
+    color: maroon;
+}
+
+.page_image {
+   width: 100px;
+   height: 100px; 
+}
+
+.grid {
+      display: grid;
+      grid-template-columns: repeat(6, 120px);
+      grid-template-rows: repeat(6, 60px);
+      gap: 4px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+    }
+
+.grid_4 {
+      display: grid;
+      grid-template-columns: repeat(4, 120px);
+      grid-template-rows: repeat(6, 60px);
+      gap: 4px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+    }
+
+ .grid_3 {
+      display: grid;
+      grid-template-columns: repeat(3, 120px);
+      grid-template-rows: repeat(6, 60px);
+      gap: 4px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+    }
+          
+.cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+
+    .header {
+      background-color: peru;
+      font-weight: bold;
+    }
+
+    .row-label {
+      background-color: peru;
+      font-weight: bold;
+    }
+    
+.h3 {
+    color: maroon;
+}
+    </style>   
+    </Head>
+    <body>
+        <h1><img class="page_image" src="./cat_bitmoji.png" image of my cat bitmoji>  GrammarLove</h1>
+          <hr />
+           <nav class="navbar navbar-expand-lg style="background-color: tan; bg-body-tertiary>
+        <div class="container-fluid">
+    <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+  <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1"/>
+</svg><img src="./dog.jpg" height="16" alt=""> Navigate the site</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./au_courant.html">Au courant</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./GrammarLove.html">GrammarLove</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./journaling.html">Journaling</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="./resume.html">Resume</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Spanish Focus Areas
+          </a>
+          <ul class="dropdown-menu" style="background-color: tan;">
+            <li><a class="dropdown-item" href="./Common Sayings.html">Common Sayings</a></li>
+            <li><a class="dropdown-item" href="./Confusing Words.html">Confusing Words</a></li>
+            <li><a class="dropdown-item" href="./Numbers.html">Numbers</a></li>
+            <li><a class="dropdown-item" href="./Pronouns.html">Pronouns</a></li>
+            <li><a class="dropdown-item" href="./Similar Words.html">Similar Words</a></li>
+            <li><a class="dropdown-item" href="./Verbs.html">Verbs</a></li>
+            <li><a class="dropdown-item" href="./Vocabulary.html">Vocabulary</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="./Spanish.html">Spanish culture</a></li>
+          </ul>
+        </li>
+        </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Find</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    <hr />
+        <p>On this page of my website, I will cover grammar concepts.</p>
+        <p>Grammar concepts are important for various reasons. My reasons for creating this page is not only for it to be a handy resource for myself, but also for others. Also, now that I'm learning foreign languages, I find it necesary to understand what is meant by the subjective, imperative, perfect, etc, forms of verbs.</p>
+        <p>I also want a quick references for confusing words like homophones and words that are easily confused, such as affect and effect.</p>
+        <p>So, to that end, the page begins.</p>
+          <hr />
+
+    <h2>Indicative</h2>
+    <p>The indicative form of a verb is the most common English form of a verb. It is used to make factual statements or to state the current situation.</p>
+    <div class="grid">
+    <!-- Header Row -->
+    <div class="cell header">Person</div>
+    <div class="cell header">Present</div>
+    <div class="cell header">Preterit</div>
+    <div class="cell header">Imperfect</div>
+    <div class="cell header">Conditional</div>
+    <div class="cell header">Future</div>
+<!-- Row 1 -->
+    <div class="cell row-label">I</div>
+    <div class="cell">I am</div>
+    <div class="cell">I was</div>
+    <div class="cell">I was being</div>
+    <div class="cell">I would be</div>
+    <div class="cell">I will be</div>
+
+    <!-- Row 2 -->
+    <div class="cell row-label">You</div>
+    <div class="cell">You are</div>
+    <div class="cell">You were</div>
+    <div class="cell">You were being</div>
+    <div class="cell">You would be</div>
+    <div class="cell">You will be</div>
+
+    <!-- Row 3 -->
+    <div class="cell row-label">She/He</div>
+    <div class="cell">She/He is</div>
+    <div class="cell">She/He was</div>
+    <div class="cell">She/He was being</div>
+    <div class="cell">She/He woukd be</div>
+    <div class="cell">She/He will be</div>
+
+    <!-- Row 4 -->
+    <div class="cell row-label">We</div>
+    <div class="cell">We are</div>
+    <div class="cell">We were</div>
+    <div class="cell">We were being</div>
+    <div class="cell">We would be</div>
+    <div class="cell">We will be</div>
+
+    <!-- Row 5 -->
+    <div class="cell row-label">They</div>
+    <div class="cell">They are</div>
+    <div class="cell">They were</div>
+    <div class="cell">They were being</div>
+    <div class="cell">They would be</div>
+    <div class="cell">They will be</div>
+  </div>
+  <hr />
+  <h2>Subjective</h2>
+    <p>Used to express a thought that is something other than a fact or current situation. It is used to express a point of view or an emotion.</p>
+  <div>
+    <div class="grid_4">
+    <div class="cell header">Person</div>
+    <div class="cell header">Present</div>
+    <div class="cell header">Imperfect</div>
+    <div class="cell header">Future</div>
+
+    <div class="cell row-label">I</div>
+    <div class="cell">I am</div>
+    <div class="cell">I was</div>
+    <div class="cell">I will be</div>
+    
+
+    <!-- Row 2 -->
+    <div class="cell row-label">You</div>
+    <div class="cell">You are</div>
+    <div class="cell">You were</div>
+    <div class="cell">You will be</div>
+   
+
+    <!-- Row 3 -->
+    <div class="cell row-label">She/He</div>
+    <div class="cell">She/He is</div>
+    <div class="cell">She/He was</div>
+    <div class="cell">She/He will be</div>
+    
+
+    <!-- Row 4 -->
+    <div class="cell row-label">We</div>
+    <div class="cell">We are</div>
+    <div class="cell">We were</div>
+    <div class="cell">We will be</div>
+    
+
+    <!-- Row 5 -->
+    <div class="cell row-label">They</div>
+    <div class="cell">They are</div>
+    <div class="cell">They were</div>
+    <div class="cell">They will be</div>
+ </div>
+ <hr />
+<h2>Imperative</h2>
+    <p>An imperative verb is a verb that expresses a command, instruction, or request. It is used to tell someone to do something and is often referred to as a "command word" or "bossy verb." In an imperative sentence, the imperative verb is the action word that directs the listener or reader to perform a specific action.</p>
+  <div>
+    <div class="grid_3">
+    <div class="cell header">Person</div>
+    <div class="cell header">Affirmative</div>
+    <div class="cell header">Negative</div>
+
+    <div class="cell row-label">I</div>
+    <div class="cell">-</div>
+    <div class="cell">-</div>
+    
+
+    <!-- Row 2 -->
+    <div class="cell row-label">You</div>
+    <div class="cell">You be</div>
+    <div class="cell">You be not</div>
+   
+
+    <!-- Row 3 -->
+    <div class="cell row-label">She/He</div>
+    <div class="cell">-</div>
+    <div class="cell">-</div>
+    
+
+    <!-- Row 4 -->
+    <div class="cell row-label">We</div>
+    <div class="cell">Let's be</div>
+    <div class="cell">Let's not be</div>
+    
+
+    <!-- Row 5 -->
+    <div class="cell row-label">They</div>
+    <div class="cell">-</div>
+    <div class="cell">-</div>
+ </div>
+<hr />
+
+<h2>Progressive</h2>
+    <p>The progressive verb tense, also called the continuous tense, is an English verb tense used to describe continuing actions—actions that are in progress and ongoing. It can be conjugated to be used in the past, present, or future.</p>
+    <div class="grid">
+    <!-- Header Row -->
+    <div class="cell header">Person</div>
+    <div class="cell header">Present</div>
+    <div class="cell header">Preterit</div>
+    <div class="cell header">Imperfect</div>
+    <div class="cell header">Conditional</div>
+    <div class="cell header">Future</div>
+<!-- Row 1 -->
+    <div class="cell row-label">I</div>
+    <div class="cell">I am being</div>
+    <div class="cell">I was being</div>
+    <div class="cell">I was being</div>
+    <div class="cell">I would be being</div>
+    <div class="cell">I will be being</div>
+
+    <!-- Row 2 -->
+    <div class="cell row-label">You</div>
+    <div class="cell">You are being</div>
+    <div class="cell">You were being</div>
+    <div class="cell">You were being</div>
+    <div class="cell">You would be being</div>
+    <div class="cell">You will be being</div>
+
+    <!-- Row 3 -->
+    <div class="cell row-label">She/He</div>
+    <div class="cell">She/He is being</div>
+    <div class="cell">She/He was being</div>
+    <div class="cell">She/He was being</div>
+    <div class="cell">She/He woukd be being</div>
+    <div class="cell">She/He will be being</div>
+
+    <!-- Row 4 -->
+    <div class="cell row-label">We</div>
+    <div class="cell">We are being</div>
+    <div class="cell">We were being</div>
+    <div class="cell">We were being</div>
+    <div class="cell">We would be being</div>
+    <div class="cell">We will be being</div>
+
+    <!-- Row 5 -->
+    <div class="cell row-label">They</div>
+    <div class="cell">They are being</div>
+    <div class="cell">They were being</div>
+    <div class="cell">They were being</div>
+    <div class="cell">They would be being</div>
+    <div class="cell">They will be being</div>
+  </div>
+  <hr />
+
+  <h2>Perfect</h2>
+    <p>The perfect tense literally means the “complete” tense. This is because it indicates an action that is finished. The perfect tense often puts a focus on the present even if the event occurred in the past.</p>
+    <div class="grid">
+    <!-- Header Row -->
+    <div class="cell header">Person</div>
+    <div class="cell header">Present</div>
+    <div class="cell header">Preterit</div>
+    <div class="cell header">Past</div>
+    <div class="cell header">Conditional</div>
+    <div class="cell header">Future</div>
+<!-- Row 1 -->
+    <div class="cell row-label">I</div>
+    <div class="cell">I have been</div>
+    <div class="cell">I had been</div>
+    <div class="cell">I have been</div>
+    <div class="cell">I would have been</div>
+    <div class="cell">I will have been</div>
+
+    <!-- Row 2 -->
+    <div class="cell row-label">You</div>
+    <div class="cell">You have been</div>
+    <div class="cell">You had been</div>
+    <div class="cell">You had been</div>
+    <div class="cell">You would have been</div>
+    <div class="cell">You will have been</div>
+
+    <!-- Row 3 -->
+    <div class="cell row-label">She/He</div>
+    <div class="cell">She/He has been</div>
+    <div class="cell">She/He had been</div>
+    <div class="cell">She/He had been</div>
+    <div class="cell">She/He woukd have been</div>
+    <div class="cell">She/He will have been</div>
+
+    <!-- Row 4 -->
+    <div class="cell row-label">We</div>
+    <div class="cell">We are being</div>
+    <div class="cell">We were being</div>
+    <div class="cell">We were being</div>
+    <div class="cell">We would be being</div>
+    <div class="cell">We will be being</div>
+
+    <!-- Row 5 -->
+    <div class="cell row-label">They</div>
+    <div class="cell">They have been</div>
+    <div class="cell">They had been</div>
+    <div class="cell">They had been</div>
+    <div class="cell">They would have been</div>
+    <div class="cell">They will have been</div>
+  </div>
+  <hr />
+
+  <h2>Perfect Progressive</h2>
+    <p>The perfect progressive tense combines aspects of completion and continuous action, indicating that an action was ongoing and is related to a specific point in time.</p>
+    <div class="grid_4">
+    <!-- Header Row -->
+    <div class="cell header">Person</div>
+    <div class="cell header">Present</div>
+    <div class="cell header">Past</div>
+    <div class="cell header">Future</div>
+ 
+    
+<!-- Row 1 -->
+    <div class="cell row-label">I</div>
+    <div class="cell">I have been being</div>
+    <div class="cell">I had been being</div>
+    <div class="cell">I will have been being</div>
+   
+
+    <!-- Row 2 -->
+    <div class="cell row-label">You</div>
+    <div class="cell">You have been being</div>
+    <div class="cell">You had been being</div>
+    <div class="cell">You will have been being</div>
+   
+
+    <!-- Row 3 -->
+    <div class="cell row-label">She/He</div>
+    <div class="cell">She/He has been being</div>
+    <div class="cell">She/He had been being</div>
+    <div class="cell">She/He will have been being</div>
+   
+
+    <!-- Row 4 -->
+    <div class="cell row-label">We</div>
+    <div class="cell">We have been being</div>
+    <div class="cell">We had been being</div>
+    <div class="cell">We will have been being</div>
+    
+
+    <!-- Row 5 -->
+    <div class="cell row-label">They</div>
+    <div class="cell">They have been being</div>
+    <div class="cell">They had been being</div>
+    <div class="cell">They will have been being</div>
+  </div>
+  <hr />
+
+  <h2>Perfect Subjective</h2>
+    <p>The perfect subjective verb form is a grammatical term that indicates that an action or circumstance occurred earlier than the time under consideration, often focusing on the resulting state rather than the occurrence itself. In English, the perfect tense is formed using the auxiliary verb "have" or "has" together with the past participle of the main verb. For example, "I have finished my homework" indicates that the action of finishing homework occurred before the time of speaking. The perfect tense is used to express completed actions or states, and it can be contrasted with other tenses such as the imperfect, which refers to past actions or states that are not completed.</p>
+  <div>
+    <div class="grid_4">
+    <div class="cell header">Person</div>
+    <div class="cell header">Present</div>
+    <div class="cell header">Past</div>
+    <div class="cell header">Future</div>
+
+    <div class="cell row-label">I</div>
+    <div class="cell">I have been</div>
+    <div class="cell">I had been</div>
+    <div class="cell">I will have been</div>
+    
+
+    <!-- Row 2 -->
+    <div class="cell row-label">You</div>
+    <div class="cell">You have been</div>
+    <div class="cell">You had been</div>
+    <div class="cell">You will have been</div>
+   
+
+    <!-- Row 3 -->
+    <div class="cell row-label">She/He</div>
+    <div class="cell">She/He has been</div>
+    <div class="cell">She/He had been</div>
+    <div class="cell">She/He will have been</div>
+    
+
+    <!-- Row 4 -->
+    <div class="cell row-label">We</div>
+    <div class="cell">We have been</div>
+    <div class="cell">We had been</div>
+    <div class="cell">We will have been</div>
+    
+
+    <!-- Row 5 -->
+    <div class="cell row-label">They</div>
+    <div class="cell">They have been</div>
+    <div class="cell">They had been</div>
+    <div class="cell">They will have been</div>
+ </div>
+
+ <h2>Informal Future</h2>
+    <p>The informal future verb form, often referred to as the periphrastic future, is formed using the verb "To go" conjugated in the present tense. For example, "I will go." This form is commonly used in informal contexts to express future intentions or plans. Unlike the formal future tense, which typically uses "will," the informal future is more casual and often lacks the formal structure of auxiliary verbs.</p>
+  <div>
+      <div class="grid_3">
+    <div class="cell header">Person</div>
+    <div class="cell header">Informal Future</div>
+    <div class="cell header">-</div>
+
+    <div class="cell row-label">I</div>
+    <div class="cell">I am going to be</div>
+    <div class="cell">-</div>
+    
+
+    <!-- Row 2 -->
+    <div class="cell row-label">You</div>
+    <div class="cell">You are going to be</div>
+    <div class="cell">-</div>
+   
+
+    <!-- Row 3 -->
+    <div class="cell row-label">She/He</div>
+    <div class="cell">She/He is going to be</div>
+    <div class="cell">-</div>
+    
+
+    <!-- Row 4 -->
+    <div class="cell row-label">We</div>
+    <div class="cell">We are going to be</div>
+    <div class="cell">-</div>
+    
+
+    <!-- Row 5 -->
+    <div class="cell row-label">They</div>
+    <div class="cell">They are going to be</div>
+    <div class="cell">-</div>
+ </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+       
+</body>
